@@ -9,6 +9,8 @@ import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import jakarta.persistence.*;
+import java.util.List;
+import org.hibernate.annotations.Where;
 import java.util.Date;
 
 /**
@@ -92,4 +94,9 @@ public class CommitteeMemberAssignment extends Auditable {
     private Boolean isActive = true;
 
     // ----- DocumentIDs (appointment documents) -----
+
+    @OneToMany(fetch = FetchType.LAZY)
+    @JoinColumn(name = "entity_id", referencedColumnName = "id", insertable = false, updatable = false)
+    @Where(clause = "entity_name = 'CommitteeMemberAssignment'")
+    private List<EntityDocument> documents;
 }

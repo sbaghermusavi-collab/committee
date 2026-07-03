@@ -5,6 +5,8 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 import jakarta.persistence.*;
+import java.util.List;
+import org.hibernate.annotations.Where;
 import java.time.LocalDate;
 
 @Entity
@@ -109,4 +111,9 @@ public class MeetingItemInvitation extends Auditable {
     @Column(name = "notes")
     @Schema(description = "توضیحات")
     private String notes;
+
+    @OneToMany(fetch = FetchType.LAZY)
+    @JoinColumn(name = "entity_id", referencedColumnName = "id", insertable = false, updatable = false)
+    @Where(clause = "entity_name = 'MeetingItemInvitation'")
+    private List<EntityDocument> documents;
 }

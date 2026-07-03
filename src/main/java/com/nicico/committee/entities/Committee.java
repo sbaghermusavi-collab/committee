@@ -1,7 +1,6 @@
 package com.nicico.committee.entities;
 
 import com.nicico.copper.common.domain.Auditable;
-import com.nicico.committee.validation.ValidBaseInfo;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,6 +8,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 import jakarta.persistence.*;
+import java.util.List;
+import org.hibernate.annotations.Where;
 
 @Entity
 @Table(name = "committee")
@@ -30,7 +31,6 @@ public class Committee extends Auditable {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "category_id", insertable = false, updatable = false)
     @Schema(description = "ماهیت سازمانی (اطلاعات پایه) | Table: ماهیت سازمانی جلسه | ID: 1e6aa780-517c-42fe-b531-3044b14a0d48")
-    @ValidBaseInfo(parentCode = "ENUM_COMMITTY_TYPE")
     private BaseInfo category;
 
     // ----- BusinessDomain FK (BaseInfo) -----
@@ -149,4 +149,9 @@ public class Committee extends Auditable {
     @Column(name = "is_active", nullable = false)
     @Schema(description = "فعال/غیرفعال")
     private Boolean isActive = true;
+
+    @OneToMany(fetch = FetchType.LAZY)
+    @JoinColumn(name = "entity_id", referencedColumnName = "id", insertable = false, updatable = false)
+    @Where(clause = "entity_name = 'Committee'")
+    private List<EntityDocument> documents;
 }
