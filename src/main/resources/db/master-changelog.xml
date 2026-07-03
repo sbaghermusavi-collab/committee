@@ -2,7 +2,16 @@
 <databaseChangeLog
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
+<include file="/db/changelog/db.changelog-baseinfo.xml"/>
+    <include file="/db/changelog/db.changelog-committee.xml"/>
+    <include file="/db/changelog/db.changelog-committeesession.xml"/>
+    <include file="/db/changelog/db.changelog-committeeposition.xml"/>
+    <include file="/db/changelog/db.changelog-committeecalendar.xml"/>
+    <include file="/db/changelog/db.changelog-committeememberassignment.xml"/>
+    <include file="/db/changelog/db.changelog-sessionattendance.xml"/>
+    <include file="/db/changelog/db.changelog-committeeperiodicitysettings.xml"/>
+    <include file="/db/changelog/db.changelog-baseinfo-data.xml"/>
 
 </databaseChangeLog>

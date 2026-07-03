@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+
+    <changeSet id="1-committeeperiodicitysettings-create-table" author="seyyed">
+        <createTable tableName="committee_periodicity_settings">
+            <column name="id" type="VARCHAR(36)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="calendar_id" type="VARCHAR(36)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="interval_value" type="INT"/>
+            <column name="weekday_mask" type="VARCHAR(255)"/>
+            <column name="day_of_month" type="VARCHAR(255)"/>
+            <column name="week_of_month" type="VARCHAR(255)"/>
+            <column name="month_mask" type="VARCHAR(255)"/>
+            <column name="holiday_rule" type="CHAR(1)"/>
+
+            <!-- Auditable Fields -->
+            <column name="d_created_date" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="c_created_by" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="d_last_modified_date" type="TIMESTAMP"/>
+            <column name="c_last_modified_by" type="VARCHAR(255)"/>
+            <column name="n_version" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint
+                baseColumnNames="calendar_id"
+                baseTableName="committee_periodicity_settings"
+                constraintName="fk_periodicitysettings_calendar"
+                referencedColumnNames="id"
+                referencedTableName="committee_calendar"/>
+    </changeSet>
+    <changeSet id="1781889967213-1" author="seyyed">
+        <modifyDataType tableName="committee_periodicity_settings" columnName="holiday_rule" newDataType="varchar(36)"/>
+    </changeSet>
+
+</databaseChangeLog>

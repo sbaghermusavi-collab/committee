@@ -1,0 +1,365 @@
+﻿id,type,code,latin,persian,description,parent_id,is_active,is_default
+503a3f60-0352-48aa-822c-1b0f5a1c95eb,ENUM_TYPE,ENUM_VOTING_METHOD,روش اخذ تصمیم,روش اخذ تصمیم,Parent category for روش اخذ تصمیم,,true,false
+49718213-be0a-4092-97fd-bc3c50508ba2,ENUM_TYPE,CON,Consensus,اجماع,,503a3f60-0352-48aa-822c-1b0f5a1c95eb,true,false
+7ad56a58-8f57-4e08-9368-b436e4bba0ab,ENUM_TYPE,SIM,Simple Majority,اکثریت ساده,,503a3f60-0352-48aa-822c-1b0f5a1c95eb,true,false
+5de1b2c9-c495-4285-9e61-16036f7206b0,ENUM_TYPE,ABS,Absolute Majority,اکثریت مطلق,,503a3f60-0352-48aa-822c-1b0f5a1c95eb,true,false
+6c7d977c-cc9d-4910-b658-badcc7066411,ENUM_TYPE,QMJ,Qualified Majority,اکثریت ویژه,,503a3f60-0352-48aa-822c-1b0f5a1c95eb,true,false
+5ad3760c-2d58-423d-b93e-222b6de1b14c,ENUM_TYPE,UNA,Unanimous,اتفاق آراء,,503a3f60-0352-48aa-822c-1b0f5a1c95eb,true,false
+8a9a9bd9-cb5c-401f-8f7b-f53cbb15e95d,ENUM_TYPE,WGT,Weighted Voting,رأی‌گیری وزنی,,503a3f60-0352-48aa-822c-1b0f5a1c95eb,true,false
+b6d7cb20-360a-4311-a9bf-0585d22520e4,ENUM_TYPE,ENUM_INVITATION_STATUS,وضعیت پاسخ به دعوت,وضعیت پاسخ به دعوت,Parent category for وضعیت پاسخ به دعوت,,true,false
+d8d63d18-9a80-42a5-a294-387e14c83ef4,ENUM_TYPE,PND,Pending,در انتظار پاسخ,,b6d7cb20-360a-4311-a9bf-0585d22520e4,true,false
+8ac52aff-a112-4a84-a35b-caf63590914c,ENUM_TYPE,ACC,Accepted,پذیرفته شد,,b6d7cb20-360a-4311-a9bf-0585d22520e4,true,false
+2b2ad8e5-637f-45b3-b245-65d6ef5ed27f,ENUM_TYPE,DEC,Declined,رد دعوت,,b6d7cb20-360a-4311-a9bf-0585d22520e4,true,false
+144fd591-0501-4d3b-9e49-ed5c2d8d5de5,ENUM_TYPE,EXC,Excused,معذور,,b6d7cb20-360a-4311-a9bf-0585d22520e4,true,false
+36e25c50-b134-444d-842c-8050ba36dc5c,ENUM_TYPE,DLG,Delegated,جانشین معرفی شد,,b6d7cb20-360a-4311-a9bf-0585d22520e4,true,false
+1f4e7775-7fa5-498a-9410-992c24cb09fe,ENUM_TYPE,ENUM_NOTIFICATION_METHOD,روش‌های اطلاع رسانی,روش‌های اطلاع رسانی,Parent category for روش‌های اطلاع رسانی,,true,false
+c3ec33de-6348-4eec-99b2-c4c6b3b2007f,ENUM_TYPE,SYS,System Notification,اعلان سیستمی,اعلان در سامانه,1f4e7775-7fa5-498a-9410-992c24cb09fe,true,false
+0bdab8c2-a660-410f-ad1f-9aa503eed9b2,ENUM_TYPE,EML,Email,ایمیل,ارسال از طریق پست الکترونیکی,1f4e7775-7fa5-498a-9410-992c24cb09fe,true,false
+20f1e124-7a78-4fa0-bd12-1a758960c950,ENUM_TYPE,SMS,SMS,پیامک,ارسال پیامک,1f4e7775-7fa5-498a-9410-992c24cb09fe,true,false
+5aff4562-1bec-434f-a21f-ba856818096e,ENUM_TYPE,LET,Official Letter,نامه رسمی,نامه اداری کاغذی یا دبیرخانه‌ای,1f4e7775-7fa5-498a-9410-992c24cb09fe,true,false
+8b79a5ed-3b6e-4900-855d-75e6c71668ec,ENUM_TYPE,MEM,Administrative Memo,یادداشت اداری,مکاتبه داخلی,1f4e7775-7fa5-498a-9410-992c24cb09fe,true,false
+3abc8eaf-1b33-434c-882e-add460918ae1,ENUM_TYPE,APP,Mobile Application,اپلیکیشن موبایل,اعلان در اپلیکیشن,1f4e7775-7fa5-498a-9410-992c24cb09fe,true,false
+ecfd30b1-9723-452a-8c82-001273931788,ENUM_TYPE,TEL,Telephone Call,تماس تلفنی,اطلاع‌رسانی تلفنی,1f4e7775-7fa5-498a-9410-992c24cb09fe,true,false
+a75d4a49-6e44-41fa-b96d-fd6bef8ffb47,ENUM_TYPE,MSG,Instant Message,پیام‌رسان,واتساپ، بله، ایتا، تلگرام و مشابه,1f4e7775-7fa5-498a-9410-992c24cb09fe,true,false
+a8d2677d-4122-40a0-884c-262b2c501b47,ENUM_TYPE,EDO,Electronic Correspondence,مکاتبات الکترونیکی,سامانه اتوماسیون اداری,1f4e7775-7fa5-498a-9410-992c24cb09fe,true,false
+d6805df9-2e44-4c44-835a-376344a54460,ENUM_TYPE,PUB,Public Announcement,اطلاعیه عمومی,تابلو اعلانات یا درگاه ارتباط با ذینفعان,1f4e7775-7fa5-498a-9410-992c24cb09fe,true,false
+7e8e34f3-0855-4eac-98d9-310c1629ef48,ENUM_TYPE,OTH,Other,سایر,روش‌های خاص,1f4e7775-7fa5-498a-9410-992c24cb09fe,true,false
+8db00681-0d7f-4e2d-9d73-23dcc0f9a94e,ENUM_TYPE,ENUM_AGENDA_ITEM_STATUS,وضعیت دستور کارهای جلسه,وضعیت دستور کارهای جلسه,Parent category for وضعیت دستور کارهای جلسه,,true,false
+ad77d914-b7fa-4828-96be-a444b7817ff9,ENUM_TYPE,DRF,Draft,پیش‌نویس,موضوع ایجاد شده ولی هنوز برای بررسی یا طرح در جلسه آماده نشده است.,8db00681-0d7f-4e2d-9d73-23dcc0f9a94e,true,false
+c46d29bd-d774-4123-a0e7-1b58ed5626ad,ENUM_TYPE,PRP,Proposed,پیشنهادی,موضوع توسط متقاضی یا دبیرخانه ثبت و پیشنهاد شده است.,8db00681-0d7f-4e2d-9d73-23dcc0f9a94e,true,false
+654b7341-c41c-4575-b091-3f82a38225da,ENUM_TYPE,REV,Under Review,در حال بررسی,موضوع در حال بررسی کارشناسی، حقوقی، مالی یا مدیریتی است.,8db00681-0d7f-4e2d-9d73-23dcc0f9a94e,true,false
+2e08b377-a9a7-4713-a5e4-96f88966d90d,ENUM_TYPE,SCH,Scheduled,برنامه‌ریزی شده,موضوع برای طرح در یک جلسه مشخص زمان‌بندی شده است.,8db00681-0d7f-4e2d-9d73-23dcc0f9a94e,true,false
+74edc5fa-ec4f-41a1-95cb-95fb0cab955a,ENUM_TYPE,CRF,Carried Forward,منتقل از جلسه قبل,موضوع از یک یا چند جلسه قبلی بدون تعیین تکلیف به جلسه جاری منتقل شده است.,8db00681-0d7f-4e2d-9d73-23dcc0f9a94e,true,false
+99682e56-c7db-486f-b79c-30a906d86bf9,ENUM_TYPE,IPR,In Progress,در حال طرح,موضوع در جلسه جاری در حال ارائه، بحث یا بررسی است.,8db00681-0d7f-4e2d-9d73-23dcc0f9a94e,true,false
+85e41a42-6955-46e2-b654-7a33ad18ca5c,ENUM_TYPE,HLD,On Hold,متوقف,بررسی یا پیگیری موضوع به‌صورت موقت متوقف شده است.,8db00681-0d7f-4e2d-9d73-23dcc0f9a94e,true,false
+3ae690dc-9def-4a63-8bb1-7b90cebe038f,ENUM_TYPE,PST,Postponed,موکول به جلسه آینده,در جلسه تصمیم گرفته شده که موضوع در جلسه آینده مجدداً مطرح شود.,8db00681-0d7f-4e2d-9d73-23dcc0f9a94e,true,false
+42c53acb-97e0-4f5f-9d29-aa96a6dbd2a1,ENUM_TYPE,DEF,Deferred,معوق,موضوع پس از یک یا چند جلسه همچنان تعیین تکلیف نشده و در فهرست موارد معوق قرار دارد.,8db00681-0d7f-4e2d-9d73-23dcc0f9a94e,true,false
+d264ff43-ce07-4876-a51a-05107dbdcd04,ENUM_TYPE,ACT,Action Pending,در انتظار اقدام,تصمیم اتخاذ شده و منتظر اجرای اقدامات مصوب است.,8db00681-0d7f-4e2d-9d73-23dcc0f9a94e,true,false
+ea914fc7-7300-4fc1-bccc-e7dc156fb1a1,ENUM_TYPE,IMP,Implementing,در حال اجرا,اجرای مصوبه یا اقدامات مربوط به موضوع آغاز شده است.,8db00681-0d7f-4e2d-9d73-23dcc0f9a94e,true,false
+5f907832-cf04-4bc3-95d2-ba9dd1406cdc,ENUM_TYPE,CMP,Completed,اجرا شده,تمامی اقدامات مصوب به‌طور کامل انجام شده است.,8db00681-0d7f-4e2d-9d73-23dcc0f9a94e,true,false
+d1e0eab7-ee13-4ed2-a90c-f7c77b05f949,ENUM_TYPE,CLS,Closed,مختومه,موضوع پس از اجرا، رد، ابطال یا تعیین تکلیف نهایی بسته شده است.,8db00681-0d7f-4e2d-9d73-23dcc0f9a94e,true,false
+265f2a6f-be2c-4ed2-9e57-63b408e84d2b,ENUM_TYPE,CAN,Cancelled,لغو شده,موضوع قبل از تصمیم‌گیری نهایی از فرآیند خارج شده است.,8db00681-0d7f-4e2d-9d73-23dcc0f9a94e,true,false
+7f18399d-ba48-4f75-b6be-169fd566a4b9,ENUM_TYPE,ARC,Archived,بایگانی شده,پرونده صرفاً جهت نگهداری سوابق بایگانی شده و دیگر فعال نیست.,8db00681-0d7f-4e2d-9d73-23dcc0f9a94e,true,false
+43c15f1a-f5d1-42eb-a4b3-dd1429784e7a,ENUM_TYPE,ENUM_QUORUM_INVALID_REASON,دلایل عدم برگزاری جلسه,دلایل عدم برگزاری جلسه,Parent category for دلایل عدم برگزاری جلسه,,true,false
+d1131b0e-deaa-45c9-b9ce-69ce5658d45b,ENUM_TYPE,QRM,InadequateQuorum,عدم تحقق حد نصاب,تعداد اعضای حاضر دارای حق رأی کمتر از نصاب قانونی است.,43c15f1a-f5d1-42eb-a4b3-dd1429784e7a,true,false
+8df6bdfa-d22d-444c-b754-d4c7b7fe6fa2,ENUM_TYPE,ABS-CHM,ChairmanAbsence,غیبت رئیس کمیسیون,رئیس جلسه یا جانشین قانونی وی در جلسه حضور ندارد.,43c15f1a-f5d1-42eb-a4b3-dd1429784e7a,true,false
+9fc6a4de-f349-4ce7-a837-5db8cbc1da8f,ENUM_TYPE,ABS-SEC,SecretaryAbsence,غیبت دبیر کمیسیون,مسئول ثبت صورتجلسه و تطبیق فرآیندها حاضر نیست.,43c15f1a-f5d1-42eb-a4b3-dd1429784e7a,true,false
+1e2fb1bb-f148-4cbb-b5d1-7e00ff45106c,ENUM_TYPE,ABS-OBS,ObserverAbsence,غیبت ناظر الزامی,ناظرین قانونی (مانند حراست یا بازرسی) در جلسات حساس حضور ندارند.,43c15f1a-f5d1-42eb-a4b3-dd1429784e7a,true,false
+f2c9f8c5-e9ac-4fb9-a6f4-00dd7ab06627,ENUM_TYPE,ABS-SME,MandatoryExpertAbsence,غیبت کارشناس الزامی,مدعو فنی یا خبره‌ای که حضورش برای تایید گزارش الزامی است، غایب است.,43c15f1a-f5d1-42eb-a4b3-dd1429784e7a,true,false
+0bfb8634-0648-4890-afc8-ca815dfef406,ENUM_TYPE,ABS-REQ,RequesterAbsence,غیبت واحد متقاضی,مدیر یا نماینده واحد درخواست‌کننده برای دفاع از درخواست حاضر نیست.,43c15f1a-f5d1-42eb-a4b3-dd1429784e7a,true,false
+a60ca22a-cebc-40b1-bae4-31ab00486b71,ENUM_TYPE,INV-ERR,InvitationFailure,نقص در تشریفات دعوت,دعوت‌نامه برای اعضا یا مدعوین الزامی ارسال نشده یا اشتباه ارسال شده است.,43c15f1a-f5d1-42eb-a4b3-dd1429784e7a,true,false
+f537a3b8-1d61-4464-84f2-660919fdf501,ENUM_TYPE,INV-LATE,LateNotification,ارسال دیرهنگام دعوت‌نامه,زمان ارسال دعوت‌نامه کمتر از مهلت قانونی پیش از شروع جلسه است.,43c15f1a-f5d1-42eb-a4b3-dd1429784e7a,true,false
+0479a6ac-27cd-4503-ae8b-29e3fe3b8aac,ENUM_TYPE,AGN-MISS,MissingAgenda,فقدان دستور جلسه مصوب,جلسه بدون سرفصل‌های مشخص و تایید شده تشکیل شده است.,43c15f1a-f5d1-42eb-a4b3-dd1429784e7a,true,false
+fc6dfa35-76ab-4d77-99f0-14375c73f57d,ENUM_TYPE,DOC-INS,InsufficientDocuments,نقص مستندات پرونده,اسناد فنی، مالی یا حقوقی مورد نیاز برای تصمیم‌گیری در سیستم ناقص است.,43c15f1a-f5d1-42eb-a4b3-dd1429784e7a,true,false
+93a30925-27fa-4ef9-a35c-9c2415a57e21,ENUM_TYPE,COI-DET,ConflictOfInterest,تعارض منافع محرز,وجود رابطه ذینفعی بین اعضا/مدعوین با موضوع معامله کشف شده است.,43c15f1a-f5d1-42eb-a4b3-dd1429784e7a,true,false
+da43b671-f636-4a24-a2d1-9475a6f0e545,ENUM_TYPE,VEN-TEC,TechnicalInfrastructureIssue,نقص زیرساخت فنی,سامانه ضبط، ارتباط آنلاین یا زیرساخت امضای دیجیتال دچار اختلال است.,43c15f1a-f5d1-42eb-a4b3-dd1429784e7a,true,false
+bc4c1234-5c1b-48a2-99e0-5253e731d8b4,ENUM_TYPE,FORCE,ForceMajeure,فورس‌ماژور,حوادث غیرمترقبه که مانع از تشکیل یا ادامه جلسه می‌شود.,43c15f1a-f5d1-42eb-a4b3-dd1429784e7a,true,false
+849628e8-6fc9-4e29-ab9c-e263ae57016e,ENUM_TYPE,CMP-OUT,OutOfJurisdiction,عدم صلاحیت موضوعی,موضوع مطرح شده خارج از حدود اختیارات تعریف شده برای این کمیسیون است.,43c15f1a-f5d1-42eb-a4b3-dd1429784e7a,true,false
+461099a4-5120-4728-8ef3-f16433bf97aa,ENUM_TYPE,ATH-MISS,UnauthorizedMeeting,عدم اخذ مجوز برگزاری,جلسه بدون تاییدیه مقامات بالادستی یا خارج از تقویم مصوب است.,43c15f1a-f5d1-42eb-a4b3-dd1429784e7a,true,false
+e09811eb-aab2-4134-ab4c-d2bfe03ee78e,ENUM_TYPE,GST-UNV,UnverifiedGuest,عدم احراز هویت مدعو,مدعو یا نماینده پیمانکار فاقد معرفی‌نامه معتبر یا مدارک شناسایی است.,43c15f1a-f5d1-42eb-a4b3-dd1429784e7a,true,false
+add9ac22-ab85-4524-afaf-b0c7e9122426,ENUM_TYPE,MAN-CAN,ManualCancellation,لغو مدیریتی,جلسه بنا به دستور کتبی یا سیستمی مقام مجاز پیش از شروع لغو شده است.,43c15f1a-f5d1-42eb-a4b3-dd1429784e7a,true,false
+6ed88c63-2e00-4f7b-9639-96228b901095,ENUM_TYPE,ENUM_DECISION_TYPE,تصمیمات جلسه,تصمیمات جلسه,Parent category for تصمیمات جلسه,,true,false
+560bc942-1fe4-42e6-9f36-de9afe3b173e,ENUM_TYPE,REV,Review,بررسی,بررسی موضوع و مدارک,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+5b7535b9-e326-4047-9867-faf5ea8ef8d2,ENUM_TYPE,EVL,Evaluate,ارزیابی,ارزیابی فنی، مالی یا حقوقی,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+6347ff94-5a87-4db8-8f75-22eed6e171ed,ENUM_TYPE,CLR,Clarification,استعلام  بهاء,اخذ توضیح یا اطلاعات تکمیلی,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+36b2dc21-abe2-4536-8d73-ce885587dab0,ENUM_TYPE,APM,Approve,تصویب,تأیید کامل موضوع,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+fe4884fc-6c96-4e60-a351-a351c3c7e262,ENUM_TYPE,CON,Conditional Approval,تصویب مشروط,تصویب همراه شروط,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+6c4b4584-0a31-4f7a-a379-32dacfd9dea4,ENUM_TYPE,PAP,Partial Approval,تصویب جزئی,تأیید بخشی از درخواست,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+4be4ff07-bd1f-43ac-accf-40670131ad45,ENUM_TYPE,AWD,Award,تصویب واگذاری,اجازه انعقاد قرارداد یا واگذاری,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+0939916e-710e-4121-98ce-478d7be340ec,ENUM_TYPE,WIN,Winner Selection,انتخاب برنده,تعیین برنده فرآیند رقابتی,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+a52c08cb-4192-4c15-beea-c5bfcbcbc637,ENUM_TYPE,REJ,Reject,رد,عدم تأیید موضوع,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+240a8806-6354-4db3-a173-22a13a4929e4,ENUM_TYPE,REF,Refer,ارجاع برای اقدام,ارجاع به مرجع یا واحد دیگر,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+cfa20eba-bbea-441e-b387-2c81e086a108,ENUM_TYPE,REM,Remand,بررسی مجدد,بازگشت جهت بررسی مجدد,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+5e6f1a6b-7ab2-481b-ada0-8aecb91a8ce7,ENUM_TYPE,AMD,Amend,اصلاحیه,نیازمند اصلاح و بازنگری,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+cc5267f0-d5af-40df-aefa-4c3484ce2a10,ENUM_TYPE,EXT,Extension,الحاقیه,تمدید مدت، اعتبار یا مهلت,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+b34e947e-ef72-4d66-be09-298c421e982d,ENUM_TYPE,RNW,Renewal,تجدید (تمدید),شروع دوره جدید با شرایط مجاز,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+b9d6002c-cbff-40f4-bac5-ef28a4cfc0cb,ENUM_TYPE,ESC,Escalate,ارجاع به مرجع بالاتر,طرح در سطح تصمیم‌گیری بالاتر,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+5daf911c-e90b-4754-b3e8-4d4f05d7d9a0,ENUM_TYPE,SUS,Suspend,تعلیق,توقف موقت اجرای موضوع,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+9a3f5c58-e83f-47e3-9533-beb09b4335f2,ENUM_TYPE,TER,Terminate,خاتمه,پایان قطعی موضوع یا قرارداد,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+33d6aef3-d4ce-4e57-94c2-3392e4197c8b,ENUM_TYPE,CAN,Cancel,ابطال,ابطال فرآیند یا تصمیم,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+a9dfb680-b510-4569-9d2d-9835d9380884,ENUM_TYPE,ARB,Arbitration,داوری,ارجاع به داوری یا حل اختلاف,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+d0b43685-5d7c-4a15-8eed-70fc2d2ee323,ENUM_TYPE,INF,Inform,اطلاع,صرفاً جهت اطلاع,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+38074efa-16ea-4211-856c-ad6d02928204,ENUM_TYPE,ACK,Acknowledge,اخذ اطلاع,ثبت دریافت و اطلاع,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+f9fbc00a-4e1d-4665-9e47-cea2260b8587,ENUM_TYPE,NDA,No Decision,بدون تصمیم,تصمیمی اتخاذ نشد,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+8d56f8f2-fa43-488a-9e33-6386106c7dac,ENUM_TYPE,OVR,Override,نقض تصمیم قبلی,جایگزینی تصمیم قبلی,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+bfb7f8a5-ee44-40ae-80db-d64a002c833a,ENUM_TYPE,RAT,Ratify,تنفیذ,تأیید تصمیم اتخاذ شده قبلی,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+368a09cf-8792-4944-bad7-881189e9eb64,ENUM_TYPE,OTD,Other Decision,سایر,موارد استثنایی,6ed88c63-2e00-4f7b-9639-96228b901095,true,false
+536569d2-ca23-49ef-a88f-ba5523a99109,ENUM_TYPE,COMM_ENUM_MEETING_STATUS,وضعیت جلسه,وضعیت جلسه,Parent category for وضعیت جلسه,,true,false
+caea554d-2cc0-4360-9cbd-e13c2ab6b148,ENUM_TYPE,PLN,Planning,در حال برنامه‌ریزی,جلسه در مرحله هماهنگی اولیه است و هنوز نهایی نشده.,536569d2-ca23-49ef-a88f-ba5523a99109,true,false
+1d5966cf-73a4-4d84-8e35-69456e990373,ENUM_TYPE,SCH,Scheduled,برنامه‌ریزی شده,جلسه در تقویم ثبت شده اما هنوز برگزار نشده است.,536569d2-ca23-49ef-a88f-ba5523a99109,true,false
+629ee5a1-7550-4afe-8732-dfd195782f74,ENUM_TYPE,CFM,Confirmed,تأیید شده,برنامه جلسه نهایی شده و حضور شرکت‌کنندگان تأیید است.,536569d2-ca23-49ef-a88f-ba5523a99109,true,false
+b0516e90-d2ba-46ba-a274-0843eaa9e7cb,ENUM_TYPE,ACT,In Progress,در حال برگزاری,جلسه شروع شده و در حال انجام است.,536569d2-ca23-49ef-a88f-ba5523a99109,true,false
+dc004e22-a5c6-4f1a-b145-120d0cbb9c8a,ENUM_TYPE,CMP,Completed,برگزار شده (کامل),جلسه به پایان رسیده و صورتجلسه آن ثبت شده است.,536569d2-ca23-49ef-a88f-ba5523a99109,true,false
+9b7f0eba-a7b5-4149-97ed-f791d41af192,ENUM_TYPE,CNL,Cancelled,لغو شده,جلسه به طور کامل لغو شده و برگزار نمی‌شود.,536569d2-ca23-49ef-a88f-ba5523a99109,true,false
+a86b702a-04b8-4dc1-a6e4-9185ed4cd473,ENUM_TYPE,PST,Postponed,به تعویق افتاده,جلسه به زمان دیگری موکول شده است (تاریخ جدید مشخص نیست).,536569d2-ca23-49ef-a88f-ba5523a99109,true,false
+4924aa57-9458-4d04-8c96-312691827b5d,ENUM_TYPE,RSD,Rescheduled,زمانبندی مجدد,جلسه با تاریخ و زمان جدید برنامه‌ریزی شده است.,536569d2-ca23-49ef-a88f-ba5523a99109,true,false
+e2c6b80b-b662-4c32-940a-b92eac2aaf1a,ENUM_TYPE,DLY,Delayed,تأخیر خورده,جلسه با تأخیر نسبت به زمان مقرر شروع شده است.,536569d2-ca23-49ef-a88f-ba5523a99109,true,false
+717276d9-90fe-4dbe-83aa-76bee476493c,ENUM_TYPE,OVR,Overran,پایان یافته (بدون صورتجلسه),جلسه تمام شده اما خروجی یا صورتجلسه آن ثبت نشده است.,536569d2-ca23-49ef-a88f-ba5523a99109,true,false
+6ac84013-8166-4291-8121-dbe920ba9bb6,ENUM_TYPE,NQR,No Quorum,غیبت,جلسه به دلیل عدم حضور حد نصاب برگزار نشده است.,536569d2-ca23-49ef-a88f-ba5523a99109,true,false
+4957339b-fe20-4177-a9a3-6475688c6462,ENUM_TYPE,COMM_ENUM_MEETING_NATURE,نوع جلسه,نوع جلسه,Parent category for نوع جلسه,,true,false
+f9f5ad5b-c364-42a0-b5dc-23add9f835c8,ENUM_TYPE,NRM,Normal,عادی,جلسه برنامه‌ریزی شده در تقویم دوره‌ای,4957339b-fe20-4177-a9a3-6475688c6462,true,false
+abf077a2-017b-42f6-827c-b54ab1c45c02,ENUM_TYPE,EXT,Extraordinary,فوق‌العاده,جلسه خارج از نوبت عادی برای موضوع خاص و غیرمنتظره,4957339b-fe20-4177-a9a3-6475688c6462,true,false
+59eb24d8-ecc5-42e7-91f0-f534bdb814cd,ENUM_TYPE,URG,Urgent,فوری,نیاز به تصمیم‌گیری سریع در کمتر از ۲۴ ساعت,4957339b-fe20-4177-a9a3-6475688c6462,true,false
+d7963f27-edec-48cf-ab28-8a5a2b3d0531,ENUM_TYPE,EMG,Emergency,اضطراری,برای بحران یا شرایط خطرناک، بلافاصله,4957339b-fe20-4177-a9a3-6475688c6462,true,false
+6da8aed1-89f2-40a1-8817-9236635dc720,ENUM_TYPE,RPL,Replacement,جایگزین,به جای جلسه عادی لغو شده,4957339b-fe20-4177-a9a3-6475688c6462,true,false
+d2b999a9-c059-47de-b218-a85c4bf1ae35,ENUM_TYPE,TRF,Transferred,انتقالی,جلسه عادی که به زمان دیگر منتقل شده,4957339b-fe20-4177-a9a3-6475688c6462,true,false
+1b079b4d-a31b-4ccb-99ea-1b47858e80c3,ENUM_TYPE,REV,Review,بازبینی,برای بررسی تصمیمات قبلی یا ارزیابی,4957339b-fe20-4177-a9a3-6475688c6462,true,false
+e24d5684-b607-44bc-a3f1-a273e5f92ddf,ENUM_TYPE,ENUM_MEETING_MODEL,نحوی برگزاری جلسه,نحوی برگزاری جلسه,Parent category for نحوی برگزاری جلسه,,true,false
+ea5ee438-7dd9-4c57-a917-26ef3f25a7f8,ENUM_TYPE,INP,In-Person,حضوری,همه شرکت‌کنندگان در یک مکان فیزیکی حاضر هستند.,e24d5684-b607-44bc-a3f1-a273e5f92ddf,true,false
+e4f0fe4b-0176-4a93-a183-67301b3f84d3,ENUM_TYPE,ONL,Online,آنلاین,جلسه از طریق سامانه ویدئوکنفرانس یا ابزارهای مجازی (مثل Teams، Zoom، Meet) برگزار می‌شود.,e24d5684-b607-44bc-a3f1-a273e5f92ddf,true,false
+3db12ff5-f798-4c12-a118-eab46d20e280,ENUM_TYPE,HYB,Hybrid,ترکیبی,برخی افراد حضوری و برخی آنلاین شرکت می‌کنند؛ نیاز به تجهیزات صوتی/تصویری مناسب.,e24d5684-b607-44bc-a3f1-a273e5f92ddf,true,false
+fb44ebdf-d73d-44a7-97a7-25fe998325aa,ENUM_TYPE,VID,Video Conference,ویدئوکنفرانس,نوع خاصی از آنلاین که همه شرکت‌کنندگان از طریق ویدئو متصل هستند (دوربین روشن توصیه می‌شود).,e24d5684-b607-44bc-a3f1-a273e5f92ddf,true,false
+0958a772-a684-438e-953e-16586cad37ba,ENUM_TYPE,AUD,Audio-Only,صوتی,فقط با تلفن یا کنفرانس صوتی (بدون تصویر). مناسب برای پهنای باند کم یا جلسات سریع.,e24d5684-b607-44bc-a3f1-a273e5f92ddf,true,false
+4df5d4ac-9d89-49af-9d57-0a24ee68e028,ENUM_TYPE,CHT,Chat-Based,مبتنی بر متن,فقط با چت نوشتاری (بدون صدا و تصویر). مناسب برای بحث‌های ساده یا مستندسازی.,e24d5684-b607-44bc-a3f1-a273e5f92ddf,true,false
+fa904e3f-8fa2-4b44-ba0e-5e6e89c4cfa6,ENUM_TYPE,ENUM_PERIODICITY_TYPE,دسته بندی دوره‌های تناوب برگزاری جلسات,دسته بندی دوره‌های تناوب برگزاری جلسات,Parent category for دسته بندی دوره‌های تناوب برگزاری جلسات,,true,false
+86365024-5d89-4dc5-a120-ba4eaa44ee73,ENUM_TYPE,DAL,Daily,روزانه,هر روز کاری (یا هر روز هفته) در ساعت مشخص.,fa904e3f-8fa2-4b44-ba0e-5e6e89c4cfa6,true,false
+89c2f847-0d11-49d8-a233-1ff39936669f,ENUM_TYPE,WKY,Weekly,هفتگی,هر هفته در یک روز و ساعت ثابت.,fa904e3f-8fa2-4b44-ba0e-5e6e89c4cfa6,true,false
+d7a2baf1-248f-4ac9-8051-ecd99067af25,ENUM_TYPE,MTH,Monthly,ماهانه,هر ماه در تاریخ مشخص,fa904e3f-8fa2-4b44-ba0e-5e6e89c4cfa6,true,false
+6352ce66-fcb0-41b5-a2be-5a4443ba6b86,ENUM_TYPE,ANN,Annual,سالانه,هر سال یک بار. مجمع عمومی، جلسه برنامه‌ریزی استراتژیک سالانه، بودجه سال بعد.,fa904e3f-8fa2-4b44-ba0e-5e6e89c4cfa6,true,false
+00e917c8-3fc0-4778-883f-3285270fab84,ENUM_TYPE,ADH,Ad-hoc / On-demand,موردی,بدون الگوی از پیش تعیین‌شده؛ بر اساس نیاز و شرایط خاص برگزار می‌شود.,fa904e3f-8fa2-4b44-ba0e-5e6e89c4cfa6,true,false
+e4234595-f4a1-46e1-bb1b-4ed1505ae2f0,ENUM_TYPE,EVT,Event-triggered,مشروط به رویداد,با وقوع یک / چند  رویداد خاص (مثلاً عبور از آستانه خطا، دریافت شکایت) برگزار می‌گردد.,fa904e3f-8fa2-4b44-ba0e-5e6e89c4cfa6,true,false
+aae08e80-f863-4f23-b905-1f99407089ed,ENUM_TYPE,ENUM_DOCUMENT_CLASS,طبقه بندی انواع اسناد,طبقه بندی انواع اسناد,Parent category for طبقه بندی انواع اسناد,,true,false
+442734f4-13e0-4f7b-974d-04090a6fb7a1,ENUM_TYPE,PUB,Public,عمومی,اسناد قابل انتشار برای عموم بدون هیچ محدودیت دسترسی,aae08e80-f863-4f23-b905-1f99407089ed,true,false
+d4e98803-528b-45d2-9807-3a367722e55e,ENUM_TYPE,INT,Internal,داخلی,اسناد مخصوص استفاده داخلی سازمان که خارج از سازمان منتشر نمی‌شود,aae08e80-f863-4f23-b905-1f99407089ed,true,false
+78945d9a-9430-482a-9d6b-3f65e81f342a,ENUM_TYPE,RES,Restricted,محدود,اسناد قابل دسترسی فقط برای واحدها، نقش‌ها یا افراد مشخص,aae08e80-f863-4f23-b905-1f99407089ed,true,false
+8884dbc9-4753-45e7-9ea0-87c4ba8ab59a,ENUM_TYPE,CON,Confidential,محرمانه,اسناد حساس که افشای آن‌ها می‌تواند به سازمان آسیب وارد کند,aae08e80-f863-4f23-b905-1f99407089ed,true,false
+9346a41a-5b62-4ab8-91f5-a7cc960a1201,ENUM_TYPE,SCR,Secret,خیلی محرمانه,اسناد بسیار حساس با دسترسی محدود در سطح مدیران ارشد,aae08e80-f863-4f23-b905-1f99407089ed,true,false
+b8d0e9c7-f4b1-4f69-b8f3-94e06ce6de20,ENUM_TYPE,TOP,Top Secret,به‌کلی سری,بالاترین سطح طبقه‌بندی؛ افشای آن باعث خسارت جدی و راهبردی می‌شود,aae08e80-f863-4f23-b905-1f99407089ed,true,false
+b7a6db49-c69a-4bd3-96d0-9504262bb1d5,ENUM_TYPE,LEG,Legal Privileged,حقوقی,اسناد حاوی اطلاعات حقوقی یا وکالتی با محدودیت قانونی در دسترسی,aae08e80-f863-4f23-b905-1f99407089ed,true,false
+c95c4442-93a2-44aa-95e1-17cdcc053886,ENUM_TYPE,PER,Personal Data,حاوی داده‌های شخصی,اسناد دارای اطلاعات شخصی تحت قوانین حفاظت داده,aae08e80-f863-4f23-b905-1f99407089ed,true,false
+9fe60088-cd66-479a-b201-8ee038b4dd2c,ENUM_TYPE,FIN,Sensitive Financial,مالی حساس,اسناد مالی محرمانه مانند گزارش‌های حسابرسی و بودجه‌های خاص,aae08e80-f863-4f23-b905-1f99407089ed,true,false
+c6fd8e8a-9bcc-4d50-b722-56abd2736d19,ENUM_TYPE,SEC,Security Classified,امنیتی,اسناد مرتبط با امنیت سازمان، زیرساخت یا عملیات حساس,aae08e80-f863-4f23-b905-1f99407089ed,true,false
+d958f5fb-abef-4d06-ba5f-2b59b13bb668,ENUM_TYPE,ENUM_COMMITTEE_LEVEL,سطح جلسه یا کمیسیون,سطح جلسه یا کمیسیون,Parent category for سطح جلسه یا کمیسیون,,true,false
+995cc03a-68b9-40c5-a0fc-f8b0eb005e37,ENUM_TYPE,SUP,Supreme,عالی,"بالاترین سطح کمیسیون برای معاملات راهبردی و ملی (ارزش بالای ۵۰,۰۰۰ میلیارد تومان، مشارکت‌های بین‌المللی کلان). مصوبات نیاز به تأیید هیئت مدیره یا نهادهای بالادستی (وزارت صمت، ایمیدرو) دارد.",d958f5fb-abef-4d06-ba5f-2b59b13bb668,true,false
+e5e38470-8c94-4356-8553-ee23e2da0d9f,ENUM_TYPE,MAIN,Main,اصلی,"سطح اصلی برای معاملات عمده (۲,۰۰۰ تا ۵۰,۰۰۰ میلیارد تومان) و قراردادهای چارچوب بزرگ در سطح شرکت. اختیارات گسترده در محدوده مصوب دارد و می‌تواند برخی اختیارات را به کمیسیون منطقه‌ای یا عادی تفویض کند.",d958f5fb-abef-4d06-ba5f-2b59b13bb668,true,false
+edf643ca-a14b-46e3-a602-c7d129fa7e55,ENUM_TYPE,REG,Regional,منطقه‌ای,"سطح مختص معاملات در یک منطقه یا مجتمع مشخص (مانند مجتمع مس سرچشمه، خاتون‌آباد، میدوک). برای معاملات با ارزش متوسط تا نسبتاً بالا (۵۰۰ تا ۵,۰۰۰ میلیارد تومان) که نیاز به تصمیم‌گیری سریع‌تر و بومی‌تر دارد. اختیارات تفویضی از کمیسیون اصلی.",d958f5fb-abef-4d06-ba5f-2b59b13bb668,true,false
+7a48cacc-87f3-4fe2-be8a-82d59835947c,ENUM_TYPE,NORM,Normal,عادی,"سطح عادی برای معاملات متوسط (۵۰۰ تا ۲,۰۰۰ میلیارد) و جزئی (کمتر از ۵۰۰ میلیارد) در سطح واحد یا کارخانه. حد نصاب ۳ عضو و رأی با اکثریت ساده.",d958f5fb-abef-4d06-ba5f-2b59b13bb668,true,false
+949e05bd-e717-4201-aa3f-08710b6c657a,ENUM_TYPE,TECH,Technical,فنی و ارزیابی,سطح تخصصی و مشورتی برای ارزیابی فنی پیشنهادات، تعیین صلاحیت پیمانکاران و تطابق با مشخصات. بدون قدرت تصویب مالی؛ نتایج به کمیسیون اصلی، منطقه‌ای یا عادی ارجاع می‌شود. رأی به صورت اجماع.,d958f5fb-abef-4d06-ba5f-2b59b13bb668,true,false
+e04dbb81-268f-4aa8-b5c2-09ce771ab9e5,ENUM_TYPE,SPEC,Special,ویژه,برای موارد استثنایی مانند خرید انحصاری (SOS)، ترک تشریفات اضطراری (EMG)، یا تجدیدنظر در نتایج مناقصه پیش از انعقاد قرارداد. نیاز به تأیید ویژه کمیسیون عالی یا هیئت مدیره دارد.,d958f5fb-abef-4d06-ba5f-2b59b13bb668,true,false
+1c96cb7f-209d-4335-91f7-f2f19f038fa0,ENUM_TYPE,APL,Appeal,استیناف / شکایات,برای رسیدگی به اعتراضات مناقصه‌گران و مزایده‌گران پس از اعلام برنده. رأی این کمیسیون قطعی و لازمالاجراست و قابل اعتراض در مراجع دیگر نیست (به جز موارد خاص).,d958f5fb-abef-4d06-ba5f-2b59b13bb668,true,false
+c4ca1666-822a-4b75-8f6c-efdefa2a200e,ENUM_TYPE,ENUM_SUBSTITUTION_REASON,دلایل جانشینی,دلایل جانشینی,Parent category for دلایل جانشینی,,true,false
+53964580-83ee-4d34-96e5-a49cabd250d6,ENUM_TYPE,ABS,Absence,غیبت,عضو اصلی در جلسه حاضر نشده و جانشین برای تأمین حضور منصوب می‌شود.,c4ca1666-822a-4b75-8f6c-efdefa2a200e,true,false
+99fd4449-9c2c-4a6e-ac17-b552e50c4415,ENUM_TYPE,LEV,Leave,مرخصی,عضو اصلی در مرخصی رسمی است و قادر به شرکت در جلسه نیست.,c4ca1666-822a-4b75-8f6c-efdefa2a200e,true,false
+4af19bca-ab7f-4288-9373-50c23a5e7519,ENUM_TYPE,MIS,Official Mission,مأموریت,عضو اصلی در مأموریت یا سفر کاری سازمان حضور دارد.,c4ca1666-822a-4b75-8f6c-efdefa2a200e,true,false
+d5f9ca03-6361-45f3-b9ef-a3c5fefe68fd,ENUM_TYPE,SIC,Sickness,بیماری,عضو اصلی به دلیل بیماری یا محدودیت پزشکی امکان حضور ندارد.,c4ca1666-822a-4b75-8f6c-efdefa2a200e,true,false
+28f6ccf7-2b14-4e83-9f1e-63c722e80551,ENUM_TYPE,COI,Conflict of Interest,تعارض منافع,عضو اصلی به دلیل تضاد منافع در موضوع جلسه نمی‌تواند در بررسی یا رأی‌گیری شرکت کند.,c4ca1666-822a-4b75-8f6c-efdefa2a200e,true,false
+e2540e52-6fec-4b1a-8d94-ce55797cfe18,ENUM_TYPE,LEG,Legal Restriction,منع قانونی,وجود مانع یا محدودیت قانونی برای شرکت عضو اصلی در جلسه.,c4ca1666-822a-4b75-8f6c-efdefa2a200e,true,false
+980ffad1-1267-4519-807b-6c14f35639ef,ENUM_TYPE,VAC,Position Vacancy,خالی بودن پست,سمت مربوطه موقتاً بدون متصدی است و جانشین جایگزین می‌شود.,c4ca1666-822a-4b75-8f6c-efdefa2a200e,true,false
+9189bd22-480e-4426-b526-73f5bd2d2b04,ENUM_TYPE,PAR,Parallel Commitment,تداخل جلسه یا تعهد دیگر,عضو اصلی به دلیل هم‌زمانی با جلسه یا تعهد سازمانی دیگر قادر به حضور نیست.,c4ca1666-822a-4b75-8f6c-efdefa2a200e,true,false
+7d2ddf10-740c-4855-b9e0-98d4fbffba4c,ENUM_TYPE,MGO,Management Order,دستور مقام مافوق,جانشینی طبق دستور رسمی مدیر یا مقام بالادستی انجام شده است.,c4ca1666-822a-4b75-8f6c-efdefa2a200e,true,false
+09b9fca0-0bd7-4693-b295-6c5e1aea6717,ENUM_TYPE,DEL,Formal Delegation,تفویض رسمی اختیار,عضو اصلی اختیار حضور یا تصمیم‌گیری را به‌صورت رسمی و کتبی تفویض کرده است.,c4ca1666-822a-4b75-8f6c-efdefa2a200e,true,false
+bed4c897-9c9c-4c79-aa2f-11586b1b0d97,ENUM_TYPE,OTH,Other,سایر,سایر دلایلی که در دسته‌بندی‌های فوق قرار نمی‌گیرد.,c4ca1666-822a-4b75-8f6c-efdefa2a200e,true,false
+ad78e076-7464-4197-ace5-6361c40c45fa,ENUM_TYPE,ENUM_POSITION_TYPE,دسته بندی سمت‌های / نقش در جلسه,دسته بندی سمت‌های / نقش در جلسه,Parent category for دسته بندی سمت‌های / نقش در جلسه,,true,false
+65e3d9f7-dda1-40ed-969f-37de65687485,ENUM_TYPE,CHM,Chairman,رئیس,رهبری جلسات، تعیین دستور جلسه، تأیید نهایی مصوبات، امضای صورت‌جلسات,ad78e076-7464-4197-ace5-6361c40c45fa,true,false
+da26a197-4356-40e5-af3f-18e14c51f1ac,ENUM_TYPE,VCH,Vice Chairman,نایب‌رئیس,جانشینی رئیس در غیاب او، هماهنگی بین اعضا، پیگیری مصوبات,ad78e076-7464-4197-ace5-6361c40c45fa,true,false
+28684608-2e63-49dc-9bcf-de5454e80ede,ENUM_TYPE,SEC,Secretary,دبیر,تهیه صورت‌جلسات، ابلاغ مصوبات، بایگانی اسناد، دعوت از اعضا,ad78e076-7464-4197-ace5-6361c40c45fa,true,false
+93e18bfb-f1d2-4b48-9970-223d29af1227,ENUM_TYPE,EXP,Technical Expert,کارشناس خبره (مشاور فنی),ارائه نظر فنی تخصصی (بدون حق رأی در برخی موارد)، تحلیل گزارش‌ها,ad78e076-7464-4197-ace5-6361c40c45fa,true,false
+e093f9a9-3d9f-481b-9778-c0543e99e7fe,ENUM_TYPE,MEM,Member,عضو اصلی,حق رأی، حضور در جلسات، بررسی موضوعات، پیشنهاد تصمیمات,ad78e076-7464-4197-ace5-6361c40c45fa,true,false
+20df2540-847d-4b57-a562-8b920173a8d5,ENUM_TYPE,OBS,Observer,ناظر (عضو بدون رأی),نماینده واحدهای پشتیبان (مالی، حقوقی، HSE) برای نظارت فرآیندی,ad78e076-7464-4197-ace5-6361c40c45fa,true,false
+294bc4da-8fdd-4624-aabe-7445c43ccf91,ENUM_TYPE,RPT,Reporter / Task Leader,گزارش‌کار (رئیس کارگروه),تهیه گزارش تخصصی برای یک موضوع خاص، ارائه به کمیسیون,ad78e076-7464-4197-ace5-6361c40c45fa,true,false
+520e4632-c713-4552-895f-44832a7ba664,ENUM_TYPE,INT,Implementing Representative,نماینده واحد اجرایی,مسئول اجرای مصوبات کمیسیون در واحد مربوطه,ad78e076-7464-4197-ace5-6361c40c45fa,true,false
+1d509f6d-f63b-4eb6-9974-df7fc74c411a,ENUM_TYPE,AUD,Internal Auditor,عضو ناظر (بازرس داخلی),نظارت بر انطباق مصوبات با مقررات و آیین‌نامه‌ها,ad78e076-7464-4197-ace5-6361c40c45fa,true,false
+0bc18885-e192-45db-a83d-6581f0334e12,ENUM_TYPE,ALT,Alternate Member,عضو علی‌البدل,جایگزین عضو اصلی در غیاب وی با کلیه اختیارات,ad78e076-7464-4197-ace5-6361c40c45fa,true,false
+333c4ba5-be56-4936-9a5c-5287249f562d,ENUM_TYPE,LGL,Legal Advisor,مشاور حقوقی,ارائه نظر حقوقی در خصوص قراردادها، مقررات، انطباق قوانین (بدون حق رأی),ad78e076-7464-4197-ace5-6361c40c45fa,true,false
+32bede09-2852-49d6-8193-64d710bebab5,ENUM_TYPE,FIN,Financial Representative,نماینده مالی,بررسی تأمین اعتبار مصوبات، نظارت بر هزینه‌ها، تخصیص بودجه (بدون حق رأی),ad78e076-7464-4197-ace5-6361c40c45fa,true,false
+fa907fbc-b1f3-4b77-97f9-a89e3d95871c,ENUM_TYPE,COR,Executive Coordinator,هماهنگ‌کننده اجرایی,پیگیری مصوبات بین جلسات، ارتباط با واحدهای اجرایی، تهیه گزارش پیشرفت (با حق رأی یا بدون رأی بنا به تشخیص سازمان),ad78e076-7464-4197-ace5-6361c40c45fa,true,false
+40f12bba-8940-4c06-9f76-9e117cfcd32a,ENUM_TYPE,INSP,Inspection Representative,نماینده نهاد بازرسی,نماینده رسمی بازرسی داخلی یا حسابرسی مستقل. بدون حق رأی، با اختیار بازبینی مستندات، انطباق‌سنجی مصوبات با ضوابط، و ارائه گزارش تخلف به مراجع بالاتر.,ad78e076-7464-4197-ace5-6361c40c45fa,true,false
+aa9473a8-6645-45b8-89f3-2f2a0c375dca,ENUM_TYPE,GUS,Guest,مهمان,شخص حقیقی (داخلی یا خارجی) که برای یک یا چند جلسه مشخص جهت ارائه گزارش، توضیح فنی یا پاسخ به سوالات دعوت می‌شود. بدون حق رأی، و حضور او موقتی است.,ad78e076-7464-4197-ace5-6361c40c45fa,true,false
+b30a6c7a-e2a5-4a13-8e26-ce24f6c12059,ENUM_TYPE,INV,Invitee,مدعو,شخص حقیقی (داخلی یا خارجی) که برای یک یا چند جلسه مشخص جهت ارائه گزارش، توضیح فنی یا پاسخ به سوالات دعوت می‌شود. بدون حق رأی، و حضور او موقتی است.,ad78e076-7464-4197-ace5-6361c40c45fa,true,false
+408108c2-e812-428f-af6f-a428bd8cb061,ENUM_TYPE,ENUM_EXTENSION_REASON,Extension Reasons,دلایل تمدید / تجدید معامله,Parent category for all extension/renewal reasons,,true,false
+a217eb1b-b416-4868-a030-5f994e21b172,ENUM_TYPE,ENUM_EXT_REASON_DEADLINE,تمدید مهلت دریافت پیشنهاد,تمدید مهلت دریافت پیشنهاد,Sub-category of دلایل تمدید / تجدید معامله,408108c2-e812-428f-af6f-a428bd8cb061,true,false
+a4179843-12e2-4dd0-98e3-f4efa3f846a4,ENUM_TYPE,LP,Low Participation,کمبود تعداد مناقصه‌گران,تعداد پیشنهاد دهندگان کمتر از حد نصاب,a217eb1b-b416-4868-a030-5f994e21b172,true,false
+e01b86e5-899d-45a7-a148-276f44836485,ENUM_TYPE,FER,Frequent Extension Requests,درخواست‌های مکرر تمدید,درخواست رسمی چند متقاضی برای تمدید,a217eb1b-b416-4868-a030-5f994e21b172,true,false
+6180a4ea-00cb-4aa3-93f6-e22160654319,ENUM_TYPE,TDA,Tender Document Amendment,اصلاح اسناد مناقصه,اصلاح فنی/حقوقی اسناد,a217eb1b-b416-4868-a030-5f994e21b172,true,false
+fb2cad72-12af-4cd9-99a5-4662aa6db5d7,ENUM_TYPE,WDA,Widespread Document Ambiguity,ابهام گسترده در اسناد,نیاز به شفاف‌سازی اسناد,a217eb1b-b416-4868-a030-5f994e21b172,true,false
+8e94641a-faa2-4d47-9346-dd08866d26a1,ENUM_TYPE,FME,Force Majeure Events,شرایط قهری,حوادث غیرمترقبه,a217eb1b-b416-4868-a030-5f994e21b172,true,false
+ab7427d4-f87e-4df5-8cc4-7a2178839216,ENUM_TYPE,UBE,Updated Budget Estimation,به‌روزرسانی برآورد,اصلاح برآورد مالی,a217eb1b-b416-4868-a030-5f994e21b172,true,false
+5be18031-4f83-47f9-8037-3990d2ae8ded,ENUM_TYPE,PTI,Procurement Technical Issue,اختلال فنی سامانه,مشکل سامانه تدارکات,a217eb1b-b416-4868-a030-5f994e21b172,true,false
+6549cb79-adde-43f7-bb72-05949a301769,ENUM_TYPE,MSC,Major Scope Change,تغییر عمده دامنه,تغییر اساسی در دامنه کار,a217eb1b-b416-4868-a030-5f994e21b172,true,false
+9715b3e5-f6d4-418f-ad68-e1b21d2c3fb6,ENUM_TYPE,RBR,Regulatory Body Request,درخواست نهاد ناظر,درخواست رسمی نهاد نظارتی,a217eb1b-b416-4868-a030-5f994e21b172,true,false
+24a44cd7-7ed9-4622-8032-463f03d9d096,ENUM_TYPE,IDA,Incomplete Document Access,دسترسی ناقص به اسناد,عدم دسترسی کامل متقاضیان,a217eb1b-b416-4868-a030-5f994e21b172,true,false
+d40d7b6b-fa1c-44e3-9640-cf1b830d37db,ENUM_TYPE,ENUM_EXT_REASON_VALIDITY,تمدید اعتبار پیشنهادها,تمدید اعتبار پیشنهادها,Sub-category of دلایل تمدید / تجدید معامله,408108c2-e812-428f-af6f-a428bd8cb061,true,false
+ae678c95-d7fb-43be-93a2-47f368b11203,ENUM_TYPE,EEP,Extended Evaluation Period,طولانی شدن ارزیابی,زمان‌بر شدن بررسی فنی/مالی,d40d7b6b-fa1c-44e3-9640-cf1b830d37db,true,false
+9c45866c-d9ff-4ec7-ad13-43343bdf70cf,ENUM_TYPE,NWW,Negotiation with Winner,مذاکره با برنده,مذاکره برای نهایی‌سازی,d40d7b6b-fa1c-44e3-9640-cf1b830d37db,true,false
+5ee9c8cb-194f-48c4-aaaf-46172e79da76,ENUM_TYPE,AFA,Awaiting Fund Allocation,انتظار تخصیص اعتبار,تأخیر در تأمین اعتبار,d40d7b6b-fa1c-44e3-9640-cf1b830d37db,true,false
+9e6ca6b1-283f-4632-b3b1-77e5ba4b3d24,ENUM_TYPE,HOD,High-level Organizational Decision,تصمیم‌گیری سطح عالی,تصمیم در سطح مدیریت ارشد,d40d7b6b-fa1c-44e3-9640-cf1b830d37db,true,false
+98bac02d-4eb1-457b-813c-7fc01d7c3468,ENUM_TYPE,HCA,Handling Complaints / Appeals,رسیدگی به اعتراضات,بررسی اعتراضات قانونی,d40d7b6b-fa1c-44e3-9640-cf1b830d37db,true,false
+2b5b06d0-8c7e-48fa-9409-20a2431a583e,ENUM_TYPE,ENUM_EXT_REASON_RETENDER,تجدید کلی مناقصه,تجدید کلی مناقصه,Sub-category of دلایل تمدید / تجدید معامله,408108c2-e812-428f-af6f-a428bd8cb061,true,false
+43ac14a0-322b-443d-b5e1-961f8ba00862,ENUM_TYPE,IB,Insufficient Bids,پیشنهادهای ناکافی,کمتر از حد نصاب,2b5b06d0-8c7e-48fa-9409-20a2431a583e,true,false
+e54b8f12-d9bc-4669-971a-25e6de836525,ENUM_TYPE,UBP,Unsuitable Bid Prices,قیمت‌های نامناسب,بالاتر از برآورد,2b5b06d0-8c7e-48fa-9409-20a2431a583e,true,false
+42dda966-d012-41b0-a95c-fcd93ed4eaad,ENUM_TYPE,MBW,Multiple Bidder Withdrawals,انصراف برندگان,انصراف برنده/برندگان,2b5b06d0-8c7e-48fa-9409-20a2431a583e,true,false
+7404b940-3898-4cd8-bfef-430fe69a0255,ENUM_TYPE,DNV,Determination of Non-Value,عدم صرفه و صلاح,تشخیص عدم توجیه,2b5b06d0-8c7e-48fa-9409-20a2431a583e,true,false
+60ca6f2c-05db-4f9e-b56b-4b747e69dec1,ENUM_TYPE,TAS,Tender Annulment by Supervisor,ابطال توسط ناظر,دستور مقام ناظر,2b5b06d0-8c7e-48fa-9409-20a2431a583e,true,false
+6009cf44-5ed5-4041-ad11-2c8f78652186,ENUM_TYPE,FCT,Fundamental Change in Technology,تغییر بنیادین نیاز/تکنولوژی,تغییر اساسی نیاز,2b5b06d0-8c7e-48fa-9409-20a2431a583e,true,false
+e5b68411-3fbd-4a0b-9329-20d93022f483,ENUM_TYPE,NCB,Non-Conforming Bids,عدم انطباق پیشنهادها,عدم تطابق با الزامات,2b5b06d0-8c7e-48fa-9409-20a2431a583e,true,false
+172e9270-a289-4843-b111-faefa53813d6,ENUM_TYPE,UPD,Unsuitable Procurement Documents,نامناسب بودن اسناد,نقص اسناد,2b5b06d0-8c7e-48fa-9409-20a2431a583e,true,false
+8e168c6f-6da1-44a3-aabd-0f8be83b6149,ENUM_TYPE,NER,Non-acceptance of Evaluation Results,عدم پذیرش نتایج,رد نتایج توسط کارفرما,2b5b06d0-8c7e-48fa-9409-20a2431a583e,true,false
+d2a58217-a4e8-4c73-bc5e-738528163e2e,ENUM_TYPE,EBV,Expired Bid Validity,انقضای اعتبار پیشنهادها,پایان اعتبار همه پیشنهادها,2b5b06d0-8c7e-48fa-9409-20a2431a583e,true,false
+ab8a5c9a-2ec2-476d-aae7-8c472ae8fae8,ENUM_TYPE,ENUM_EXT_REASON_GOVERNANCE,حاکمیتی / کنترلی,حاکمیتی / کنترلی,Sub-category of دلایل تمدید / تجدید معامله,408108c2-e812-428f-af6f-a428bd8cb061,true,false
+37bd6f1d-333d-4834-82eb-ca3786a271c2,ENUM_TYPE,SCA,Special Commission Approval,نیاز به مصوبه خاص,مصوبه کمیسیون ویژه,ab8a5c9a-2ec2-476d-aae7-8c472ae8fae8,true,false
+0812cd20-918c-4c0f-b25c-c3289008f560,ENUM_TYPE,NLF,Non-Legal Formalities,عدم رعایت تشریفات,نقص تشریفات قانونی,ab8a5c9a-2ec2-476d-aae7-8c472ae8fae8,true,false
+6be5aace-72f9-4652-bd56-9d13637b6762,ENUM_TYPE,JCO,Judicial Court Order,دستور قضایی,حکم یا دستور قضایی,ab8a5c9a-2ec2-476d-aae7-8c472ae8fae8,true,false
+f936bf14-b3ef-4bad-829a-68ba481a92d2,ENUM_TYPE,ENUM_METHOD_SELECTION_REASON,انواع دلایل انتخاب روش نوع معامله,انواع دلایل انتخاب روش نوع معامله,Parent category for انواع دلایل انتخاب روش نوع معامله,,true,false
+aec15377-0a28-4710-8bd1-5f340aeac48f,ENUM_TYPE,FIN,Financial & Value Factors,عوامل مالی و ارزشی,دسته‌بندی: عواملی که بر اساس مبلغ، ارز و نصاب معامله تعیین کننده نوع روش برگزاری هستند.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+bc182707-2d8c-4a26-b2f9-c6fe67150fd0,ENUM_TYPE,FIN-VALTHR,Value Above Legal Threshold,ارزش معامله بالاتر از نصاب قانونی,تأثیر: الزام به مناقصه عمومی (معمولاً دو مرحله‌ای). مستند: ماده ۴ قانون برگزاری مناقصات.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+1cac79af-1809-4e38-9642-936bce74f46e,ENUM_TYPE,FIN-MEDTHR,Medium Value Threshold,ارزش معامله در نصاب متوسط,تأثیر: مناقصه عمومی یک مرحله‌ای یا محدود. مستند: آیین‌نامه ماده ۵۳.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+8da7cac8-c0d2-46b0-8569-2a87a4444879,ENUM_TYPE,FIN-BELTHR,Below Threshold Value,ارزش معامله پایین‌تر از نصاب,تأثیر: استعلام بها (RFQ) یا خرید مستقیم. مستند: ماده ۳ آیین‌نامه معاملات دولتی.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+f4c5a9f0-24af-4698-982f-d69089a3ae1d,ENUM_TYPE,FIN-MULCUR,Multi-Currency / Forex Transaction,معامله ارزی (چند ارزی),تأثیر: مناقصه بین‌المللی عمومی یا محدود با مجوز بانک مرکزی. مستند: قوانین پولی و بانکی.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+18031a77-7e8a-40ef-b519-f4b842a60589,ENUM_TYPE,TEC,Technical & Specialization Factors,عوامل فنی و تخصصی,دسته‌بندی: عواملی که بر اساس ماهیت فنی، نیاز به طراحی یا صلاحیت خاص تعیین می‌شوند.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+c51c7cac-1c5c-4194-8042-80cf3ad233ca,ENUM_TYPE,TEC-NEEDDES,Need for Design / Engineering,نیاز به طراحی و مهندسی,تأثیر: مناقصه دو مرحله‌ای. مستند: ماده ۴ قانون برگزاری مناقصات.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+b245c344-ce04-4ef4-8874-b07e7fa9ff2a,ENUM_TYPE,TEC-STDSPEC,Standard Specifications,کالا یا خدمات دارای مشخصات فنی استاندارد,تأثیر: مناقصه یک مرحله‌ای یا استعلام بها. مستند: ماده ۱۱.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+80625c1b-d342-42f2-a8c3-7089103d9d29,ENUM_TYPE,TEC-SPECQLF,Special Technical Qualification,نیاز به صلاحیت فنی خاص (رتبه پیمانکاری و ...),تأثیر: مناقصه دو مرحله‌ای با ارزیابی کیفی. مستند: آیین‌نامه ارزیابی کیفی.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+8b10ded4-28c1-496d-b460-8dbdcb3a35c1,ENUM_TYPE,TEC-EPC,EPC / EP / Turnkey Projects,پروژه‌های EPC، EP، یا طراحی و ساخت (Turnkey),تأثیر: مناقصه دو مرحله‌ای یا مذاکره رقابتی. مستند: FIDIC، نشریه ۴۳۱۱.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+b6acc53a-7413-4460-a300-65b8156fb1d4,ENUM_TYPE,TEC-CONSULT,Consulting Services,نیاز به خدمات مشاوره (مهندسی، برنامه‌ریزی، نظارت),تأثیر: مناقصه دو مرحله‌ای با تمرکز بر کیفیت. مستند: شیوه‌نامه انتخاب مشاور.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+37322550-eba6-4419-862e-861c26deab07,ENUM_TYPE,LEG,Legal & Regulatory Factors,عوامل حقوقی و مقرراتی,دسته‌بندی: عواملی که ناشی از قوانین، مقررات یا وضعیت حقوقی طرفین است.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+5d1766a8-682a-46d7-a86b-5c99b09133f9,ENUM_TYPE,LEG-SOLE,Legal Monopoly / Sole Source,وجود انحصار قانونی یا انحصار منبع (Sole Source),تأثیر: ترک تشریفات مناقصه. مستند: ماده ۲۱ بند «ب».,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+4a4ca9f2-a5f5-45ad-b5c6-325f0728e1a6,ENUM_TYPE,LEG-GOVT,Transactions with Government & Public Entities,معاملات با شرکت‌های دولتی و عمومی,تأثیر: در موارد خاص معاف از مناقصه. مستند: ماده ۲۱ بند «پ».,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+8fa1ec83-639c-4a87-aba4-32ba62c79cd5,ENUM_TYPE,LEG-INTAGR,Under Specific International Agreements,معاملات در چارچوب موافقتنامه‌های بین‌المللی خاص,تأثیر: معافیت از تشریفات داخلی. مستند: ماده ۲۱ بند «الف».,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+3138a29b-e149-4533-a194-863c3842936b,ENUM_TYPE,LEG-REGIND,Special Regulated Industries,معاملات در حوزه شرکت‌های مشمول ماده ۱۱۹ قانون تجارت,تأثیر: تابع آیین‌نامه معاملاتی خاص. مستند: ماده ۱۱۹ قانون تجارت.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+ae44f68e-c108-4658-8bda-1dd8a29d332e,ENUM_TYPE,LEG-RENEW,Renewal / Extension,تکرار معامله با همان تأمین‌کننده (تمدید قرارداد),تأثیر: تمدید تا سقف ۳۰٪ یا یک سال. مستند: تبصره ماده ۲۱.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+5d78b96e-56c4-4b52-a5e4-498012c03a28,ENUM_TYPE,OPE,Operational & Execution Factors,عوامل عملیاتی و اجرایی,دسته‌بندی: عواملی که ناشی از نحوه ارائه خدمات، تکرارپذیری یا نیازهای اجرایی است.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+5b728d53-8dc9-4bc0-81de-05cd4c24c840,ENUM_TYPE,OPE-RECUR,Recurring / Ongoing Services,معاملات تکراری با ماهیت مستمر,تأثیر: فراخوان برای قرارداد چارچوب (Framework) + Call-off. مستند: رویه سازمان برنامه.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+5d55b80f-acf0-4cbe-a5f2-aa781e0444e1,ENUM_TYPE,OPE-VOLCON,High Volume Consumables,خرید قطعات یدکی، لوازم مصرفی با حجم بالا,تأثیر: استعلام بها یا مناقصه محدود. مستند: عرف تجاری.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+4ea77e87-68ce-4889-943b-a2bf5dd375c7,ENUM_TYPE,OPE-KHTRANS,Know-How Transfer,نیاز به انتقال دانش فنی (Know-How),تأثیر: مذاکره مستقیم (ترک تشریفات). مستند: بند «ب» ماده ۲۱.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+958b348b-bc6d-4d51-a520-c0649bd839bb,ENUM_TYPE,OPE-LOT,Multiple Lots,تقسیم معامله به بسته‌های اجرایی (Lot Structure),تأثیر: امکان روش متفاوت برای هر بسته. مستند: عرف پروژه‌های بزرگ.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+22778572-4a38-4361-b3c3-625361ec0f4a,ENUM_TYPE,STR,Strategic & Macro Factors,عوامل استراتژیک و کلان,دسته‌بندی: عواملی که بر اساس تأثیر بر اهداف ملی، امنیت اقتصادی یا برنامه‌های توسعه انتخاب می‌شوند.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+f23c3477-a3fb-4318-aee1-e56865132616,ENUM_TYPE,STR-NATINF,Critical National Infrastructure,پروژه‌های زیرساختی حیاتی و کلان ملی,تأثیر: مناقصه عمومی دو مرحله‌ای + نظارت ملی. مستند: قوانین بودجه.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+68836f93-5b84-4e29-837b-27c61f3ebf5b,ENUM_TYPE,STR-STRAT,Strategic Transactions,معاملات راهبردی تأثیرگذار بر ظرفیت تولید ملی,تأثیر: مناقصه عمومی دو مرحله‌ای + گزارش به کمیسیون عالی. مستند: دستورالعمل وزارت صمت.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+b56ae520-f4d3-41ff-b89c-38b8a6f3e59c,ENUM_TYPE,STR-POLSENS,Politically / Reputational Sensitive,معاملات دارای حساسیت سیاسی یا تصویر عمومی,تأثیر: لزوم شفافیت حداکثری (مناقصه عمومی). مستند: قانون ارتقای سلامت نظام اداری.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+e3ac6675-35ff-42c0-9141-e3274599ff77,ENUM_TYPE,STR-PROGRAM,Multi-Year Development Program,برنامه چندساله توسعه (Portfolio / Macro-Level),تأثیر: تصویب کلیات در هیئت مدیره و تفکیک به پروژه‌های فرعی. مستند: سیستم برنامه‌ریزی دولتی.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+6d2b22f9-8791-4bb3-a9ca-e26816e2c1fb,ENUM_TYPE,SEC,Security & Defense Factors,عوامل امنیتی و دفاعی,دسته‌بندی: عواملی که ناشی از ضرورت حفظ اسرار، امنیت ملی یا شرایط اضطراری دفاعی است.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+d00df109-6e87-4771-b456-1b6179dedd87,ENUM_TYPE,SEC-CLASS,Classified / Military / National Security,معاملات محرمانه، نظامی یا دارای جنبه امنیت ملی,تأثیر: ترک تشریفات کامل. مستند: ماده ۲۳.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+c4fdc0e5-c029-4058-a7e2-2b5148a0d838,ENUM_TYPE,SEC-EMERG,Emergency / Crisis,معاملات در شرایط اضطراری (جنگ، بلایای طبیعی),تأثیر: ترک تشریفات با مجوز فوری. مستند: ماده ۲۲.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+02041e4a-4b2e-40a5-83d1-e82a7f5d7864,ENUM_TYPE,TIM,Time & Urgency Factors,عوامل زمانی و فوریت,دسته‌بندی: عواملی که بر اساس محدودیت زمانی حاد یا توقف تولید تعیین می‌شوند.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+3ca50c88-d159-431e-93aa-7e7fc7f39b20,ENUM_TYPE,TIM-URGPROD,Urgency Due to Production Stop,فوریت ناشی از توقف تولید یا اختلال در خدمات حیاتی,تأثیر: ترک تشریفات با تأیید کمیسیون. مستند: تبصره ماده ۲۲.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+1dc5615a-7285-4cb6-84db-8e023ffa6c06,ENUM_TYPE,TIM-SEASLIM,Severe Time Constraint,محدودیت زمانی شدید (فصل کاری کوتاه),تأثیر: کاهش زمان فراخوان، مناقصه محدود یا ترک تشریفات. مستند: عرف خاص.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+061f161e-6974-43a7-9916-941db3184038,ENUM_TYPE,MKT,Market & Competition Factors,عوامل بازار و رقابت,دسته‌بندی: عواملی که بر اساس تعداد تأمین‌کنندگان، ساختار بازار و رقابت پذیری انتخاب می‌شوند.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+e342548d-7335-49ee-a983-98ae73b902c5,ENUM_TYPE,MKT-COMPET,Highly Competitive Market,بازار رقابتی با تعداد زیاد تأمین‌کنندگان,تأثیر: مناقصه عمومی یک مرحله‌ای. مستند: ماده ۱۱.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+7855c625-445a-4b55-ab91-a3b0ac10f488,ENUM_TYPE,MKT-LIMSUP,Limited Number of Qualified Suppliers,بازار با تعداد محدود تأمین‌کنندگان واجد شرایط,تأثیر: مناقصه محدود (Selective Tender). مستند: ماده ۱۱.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+5d2b6e93-2133-420f-b9e8-ffae5f4ce390,ENUM_TYPE,MKT-DOMSUP,Dominant Supplier,وجود تأمین‌کننده غالب (انحصار عملی),تأثیر: بررسی امکان رقابت، در غیر این صورت ترک تشریفات. مستند: بند «ب» ماده ۲۱.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+2572097b-5460-46e1-9298-c85a8fbe36f2,ENUM_TYPE,MKT-VOLAT,High Market Price Volatility,نوسانات شدید قیمت در بازار,تأثیر: کوتاه کردن اعتبار پیشنهادها، استفاده از تعدیل قیمت. مستند: بخشنامه‌های تعدیل.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+c4c6fe77-649f-4c46-9175-bf3c7f6799ff,ENUM_TYPE,RSK,Risk & Assurance Factors,عوامل ریسک و تضمین,دسته‌بندی: عواملی که ناشی از نیاز به تضمین‌های بالا، ریسک فساد یا احتمال تغییرات زیاد است.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+cebf8fc5-a65a-4f9b-b668-6042ed144f96,ENUM_TYPE,RSK-HIGHGRT,High Guarantee Requirements,نیاز به تضمین‌های بالا (پیش‌پرداخت، حسن انجام کار),تأثیر: تعیین الزامات در اسناد مناقصه (تأثیر غیرمستقیم). مستند: شرایط عمومی پیمان.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+d5592bd3-f679-497b-b44d-817812a238e1,ENUM_TYPE,RSK-CORRUPT,High Corruption / Collusion Risk,ریسک فساد و تبانی بالا,تأثیر: الزام به مناقصه عمومی الکترونیک (ستاد). مستند: قانون سلامت اداری.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+9d2907a6-1c2c-42e1-aa26-b65347745dff,ENUM_TYPE,RSK-VARIAT,High Risk of Variations,پروژه با احتمال تغییرات زیاد (Variation),تأثیر: انتخاب روش‌های منعطف (قیمت واحد). مستند: ماده ۲۹ شرایط عمومی.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+d79d9875-85d4-41d9-81af-32019693b034,ENUM_TYPE,ENV,Environmental & International Factors,عوامل محیطی و بین‌المللی,دسته‌بندی: عواملی که ناشی از سرمایه‌گذاری خارجی، تحریم‌ها، فاینانس یا الزامات زیست‌محیطی است.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+57fe7922-62c6-4606-8b38-c97611221579,ENUM_TYPE,ENV-FDI,Foreign Direct Investment,"معاملات با مشارکت سرمایه‌گذار خارجی (FDI, JV)",تأثیر: مذاکره رقابتی یا مناقصه محدود بین‌المللی. مستند: FIPPA.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+8858dcce-a009-4edb-97e2-15922b28097c,ENUM_TYPE,ENV-FINANCE,Financed by International Credit Lines,معاملات مشمول تأمین مالی از طریق فاینانس,تأثیر: رعایت ضوابط تأمین‌کننده مالی. مستند: موافقتنامه‌های فاینانس.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+821c6927-b6c7-4fb3-bb6a-dd095bf28f3b,ENUM_TYPE,ENV-SANCTION,Sanctions / Trade Restrictions,تحریم‌ها و محدودیت‌های بین‌المللی,تأثیر: محدود شدن به تأمین‌کنندگان داخلی → مناقصه محدود یا ترک تشریفات. مستند: قوانین مقاومتی.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+7f10af01-7a45-4e50-be8a-feac478dc8d4,ENUM_TYPE,ENV-GREEN,Environmental & Sustainability,الزامات زیست‌محیطی و پایداری (Green Procurement),تأثیر: افزودن معیارهای سبز (ترجیحاً مناقصه دو مرحله‌ای). مستند: قوانین محیط زیست.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+a0649eec-6d23-420e-aeed-9a861561d94d,ENUM_TYPE,ENV-FREEZONE,Free Trade Zones,معاملات در مناطق آزاد تجاری-صنعتی,تأثیر: مقررات ساده‌تر (استعلام بها یا مذاکره مستقیم). مستند: قانون مناطق آزاد.,f936bf14-b3ef-4bad-829a-68ba481a92d2,true,false
+f8234a5b-e770-4650-8448-9b990a16cdf3,ENUM_TYPE,ENUM_CONTRACT_CONDITION,شرایط سطح کلان معامله,شرایط سطح کلان معامله,Parent category for شرایط سطح کلان معامله,,true,false
+f31fd8c5-f465-4102-9cce-9ab155e47fa9,ENUM_TYPE,PSC,Particular / Special Conditions,شرایط خصوصی,مجموعه‌ای از شروط خاص است که برای تکمیل شرایط عمومی، متناسب با وضعیت و ماهیت یک پیمان خاص تنظیم می‌شود. این شرایط به هیچ وجه نباید ناقض شرایط عمومی باشد و اولویت تفسیر با آن است.,f8234a5b-e770-4650-8448-9b990a16cdf3,true,false
+dd956d76-5467-4fa3-9bc8-4b38229083f7,ENUM_TYPE,GC,General Conditions,شرایط عمومی,برگرفته از نشریه ۴۳۱۱ سازمان برنامه و بودجه، چارچوب استاندارد و الزام‌آوری است که بر تمام قراردادهای پیمانکاری دولتی حاکم است.,f8234a5b-e770-4650-8448-9b990a16cdf3,true,false
+e533b82b-145e-494b-a35e-2b6db5833e65,ENUM_TYPE,CDC,Contract Documents,شرایط اسناد پیمان,مجموعه اسنادی است که شامل موافقتنامه، شرایط عمومی، شرایط خصوصی، نقشه‌ها، مشخصات فنی و فهرست بها می‌شود و کل طرفین را تعیین می‌کند.,f8234a5b-e770-4650-8448-9b990a16cdf3,true,false
+293ad58b-6033-4f7f-924f-92a14d83e881,ENUM_TYPE,ENUM_TRANSACTION_METHOD,روش‌ انجام معامله,روش‌ انجام معامله,Parent category for روش‌ انجام معامله,,true,false
+b1464dd8-61a4-4b74-8854-f307ab5bbe09,ENUM_TYPE,OT,Open Tender,مناقصه عمومی,برای معاملات بزرگ بالای سقف تعیین‌شده در آیین‌نامه معاملات دولتی؛ فراخوان عمومی منتشر می‌شود. مناسب خرید تجهیزات سنگین، احداث کارخانه.,293ad58b-6033-4f7f-924f-92a14d83e881,true,false
+90a0ce72-9f8c-463c-8491-0c2dfdfda49f,ENUM_TYPE,LT,Limited Tender,مناقصه محدود,دعوت از تعداد مشخصی پیمانکار واجد شرایط (حداقل ۳). برای کالاهای تخصصی یا پروژه‌های با پیچیدگی فنی بالا (مثلاً نصب کوره ذوب).,293ad58b-6033-4f7f-924f-92a14d83e881,true,false
+86c5773d-2265-4e57-bedb-93a5d4298021,ENUM_TYPE,TT,Two-Stage Tender,مناقصه دو مرحله‌ای,ابتدا پیشنهادات فنی بدون قیمت دریافت می‌شود، سپس پس از تأیید فنی، پیمانکاران منتخب قیمت ارائه می‌دهند. مناسب پروژه‌های EPC/طراحی و ساخت.,293ad58b-6033-4f7f-924f-92a14d83e881,true,false
+ba73a23d-b34e-4b9e-bf3e-6f18e7eaa06c,ENUM_TYPE,IT,International Tender,مناقصه بین‌المللی,برای خرید از تأمین‌کنندگان خارجی یا مشارکت بین‌المللی. الزامات نرخ ارز، LC و تحریم‌ها باید رعایت شود.,293ad58b-6033-4f7f-924f-92a14d83e881,true,false
+20ed20b2-acb1-4ab6-a378-42b1c718a4eb,ENUM_TYPE,AU,Public Auction,مزایده عمومی,فروش اموال مازاد، ضایعات، یا واگذاری حقوق بهره‌برداری. بالاترین قیمت برنده است.,293ad58b-6033-4f7f-924f-92a14d83e881,true,false
+e6f2fda8-d296-4e88-bae4-42bb91e3c89d,ENUM_TYPE,AU_L,Limited Auction,مزایده محدود,دعوت از چند خریدار واجد شرایط برای فروش کالاهای خاص (مثلاً فروش کاتد مس به مشتریان خاص).,293ad58b-6033-4f7f-924f-92a14d83e881,true,false
+5eff0845-8497-4ec6-9092-1ec6d068a643,ENUM_TYPE,RA,Reverse Auction,مزایده معکوس,خریدار قیمت را اعلام می‌کند و فروشندگان قیمت پایین‌تر پیشنهاد می‌دهند (کاهشی). برای کالاهای استاندارد با رقابت زیاد.,293ad58b-6033-4f7f-924f-92a14d83e881,true,false
+2634ee94-d3f0-4aa7-8aa4-0bbf5b7ba0f1,ENUM_TYPE,RFQ,Request for Quotation,استعلام بها (کتبی),دریافت حداقل ۳ فاکتور قیمت از تأمین‌کنندگان. مناسب خرید قطعات یدکی، لوازم مصرفی، خدمات ساده.,293ad58b-6033-4f7f-924f-92a14d83e881,true,false
+2ac6d646-de6c-476d-8d96-09bfeb942212,ENUM_TYPE,RFQ_T,Technical RFQ,استعلام بها با ارزیابی فنی,مانند استعلام بها، اما نیاز به تطابق فنی. برای خرید تجهیزات تخصصی با مبلغ متوسط.,293ad58b-6033-4f7f-924f-92a14d83e881,true,false
+4243540f-e861-497d-a454-3dd222991d15,ENUM_TYPE,DIR,Direct Purchase,خرید مستقیم (ترک تشریفات),بدون رقابت. فقط در موارد قانونی: انحصار، شرایط اضطراری، سقف پایین، یا مصوبه خاص. مجوز کمیسیون الزامی است.,293ad58b-6033-4f7f-924f-92a14d83e881,true,false
+ebba10b5-8421-4b01-bbf7-13b124c08eac,ENUM_TYPE,EMG,Emergency Direct Purchase,ترک تشریفات اضطراری,برای رفع خطرات جانی، خسارت مالی یا توقف خط تولید. باید مستندات اضطراری ثبت شود.,293ad58b-6033-4f7f-924f-92a14d83e881,true,false
+f385a443-ae87-451a-8483-38a737a5b4f7,ENUM_TYPE,SOS,Sole Source,خرید انحصاری (Sole Source),تنها یک تأمین‌کننده موجود است (حق اختراع، دانش فنی، قطعه انحصاری). نیاز به توجیه فنی و تأیید کمیسیون عالی.,293ad58b-6033-4f7f-924f-92a14d83e881,true,false
+348aaafb-0583-439c-bbfd-5e9c9b4a1acf,ENUM_TYPE,FW,Framework Agreement,قرارداد چارچوب دوره‌ای,توافق با یک یا چند پیمانکار برای شرایط کلی، سپس سفارش‌های بعدی (call-off) بدون مناقصه مجدد. مناسب خدمات تکراری (نت، حمل، نظافت).,293ad58b-6033-4f7f-924f-92a14d83e881,true,false
+a3b8965b-8f5b-4510-bcfb-bc6a5e7b8feb,ENUM_TYPE,DYN,Dynamic Purchasing System,سیستم خرید پویا,سامانه الکترونیکی که تأمین‌کنندگان در هر زمان می‌توانند ثبت‌نام کنند و برای سفارشات آینده واجد شرایط شوند. مناسب کالاهای رایج با استاندارد.,293ad58b-6033-4f7f-924f-92a14d83e881,true,false
+f1323101-faa7-4bc0-9a08-80a3255b4aaf,ENUM_TYPE,EP,Public-Private Partnership,مشارکت عمومی-خصوصی (PPP),"پروژه‌های BOT, BOO, BLT. سرمایه‌گذاری بخش خصوصی با بازگشت از محل بهره‌برداری. نیاز به مصوبه هیأت وزیران.",293ad58b-6033-4f7f-924f-92a14d83e881,true,false
+f0d0ad98-dc9a-4b4d-855d-876c25fdc554,ENUM_TYPE,JV,Joint Venture,مشارکت سرمایه‌گذاری مشترک,تشکیل شرکت پروژه با شریک خارجی/داخلی. هر شریک سهمی از تولید/سود می‌برد.,293ad58b-6033-4f7f-924f-92a14d83e881,true,false
+bcbed63a-4536-418c-8a22-8e17fa780229,ENUM_TYPE,INQ,Simple Inquiry,استعلام ساده (شفاهی/مکتوب),,293ad58b-6033-4f7f-924f-92a14d83e881,true,false
+3269340c-111f-4185-8f69-77eb961a1193,ENUM_TYPE,ENUM_REGULATION_SOURCE,لیست مراجع تصویب قوانین,لیست مراجع تصویب قوانین,Parent category for لیست مراجع تصویب قوانین,,true,false
+59d398e1-b398-41c2-81b8-b19b9ec7985f,ENUM_TYPE,IP,Islamic Parliament,مجلس شورای اسلامی,تصویب قوانین بالادستی مانند قانون مناقصات، قانون معادن، قانون بودجه,3269340c-111f-4185-8f69-77eb961a1193,true,false
+970bc815-a07c-4940-b856-d9b9473a0eeb,ENUM_TYPE,CAB,Cabinet of Ministers,هیأت وزیران,تصویب آیین‌نامه‌های اجرایی قوانین (مانند آیین‌نامه معاملات دولتی),3269340c-111f-4185-8f69-77eb961a1193,true,false
+f33bf35a-7461-420b-8c96-bc13ed8baebc,ENUM_TYPE,PBO,Plan and Budget Organization,سازمان برنامه و بودجه,کنترل تخصیص بودجه، نظارت بر تعهدات مالی شرکت‌های دولتی,3269340c-111f-4185-8f69-77eb961a1193,true,false
+3ae00c3b-c859-494a-afec-73f32ccc6c7b,ENUM_TYPE,GIO,General Inspection Organization,سازمان بازرسی کل کشور,نظارت بر حسن اجرای قوانین، رسیدگی به تخلفات و شکایات,3269340c-111f-4185-8f69-77eb961a1193,true,false
+a6e3d9f6-edde-4fda-bc73-df9cc7398dca,ENUM_TYPE,COA,Court of Audit,دیوان محاسبات کشور,رسیدگی به حساب‌ها و انطباق معاملات با بودجه مصوب,3269340c-111f-4185-8f69-77eb961a1193,true,false
+8beb00a5-fa85-4228-9e56-0e969b032973,ENUM_TYPE,MIMT,"Ministry of Industry, Mine & Trade",وزارت صنعت، معدن و تجارت,ابلاغ بخشنامه‌ها و دستورالعمل‌های تخصصی (حقوق دولتی معادن، استاندارد),3269340c-111f-4185-8f69-77eb961a1193,true,false
+426941c7-d1b2-48f8-8106-4515c1e10c9f,ENUM_TYPE,IMIDRO,IMIDRO,سازمان ایمیدرو,مقررات واگذاری پهنه‌ها، صلاحیت پیمانکاران معدنی، پروژه‌های مشارکتی,3269340c-111f-4185-8f69-77eb961a1193,true,false
+4d4004cb-025f-486d-bf35-fbafb38b1248,ENUM_TYPE,REG,Local Regulations,قوانین محلی (شوراها و سازمان‌های استانی),مصوبات شوراهای شهر/روستا و دستورالعمل‌های سازمان‌های استانی (مانند صمت استان),3269340c-111f-4185-8f69-77eb961a1193,true,false
+7757e10e-a9c4-435c-a33b-eabf335453f4,ENUM_TYPE,CPPO,Consumer and Producer Protection Org.,سازمان حمایت مصرف‌کنندگان و تولیدکنندگان,نظارت بر قیمت‌های پایه و جلوگیری از تخلفات در خرید/فروش کالاهای مشمول,3269340c-111f-4185-8f69-77eb961a1193,true,false
+a82e89f9-601c-4763-b9e9-1ef73f248e4c,ENUM_TYPE,INSO,Iran National Standards Org.,سازمان ملی استاندارد,الزام به رعایت استانداردهای اجباری در تجهیزات و کالاهای وارداتی/تولیدی,3269340c-111f-4185-8f69-77eb961a1193,true,false
+efcea557-d1db-4f28-9e76-f29d61c3698f,ENUM_TYPE,NICBD,NICICO Board of Directors,هیأت مدیره NICICO,تصویب آیین‌نامه معاملات شرکت و سقف اختیارات مدیرعامل,3269340c-111f-4185-8f69-77eb961a1193,true,false
+b448960f-eaee-49e1-8f8c-64c0a6648298,ENUM_TYPE,NTC,NICICO Transaction Commission,کمیسیون معاملات NICICO,تدوین دستورالعمل‌های اجرایی داخلی,3269340c-111f-4185-8f69-77eb961a1193,true,false
+80a8beb7-3e5f-4162-bd66-0bf342082324,ENUM_TYPE,TAG,Government Trading Punishment Org.,سازمان تعزیرات حکومتی,رسیدگی به تخلفات قاچاق کالا و ارز، تخلفات صنفی در معاملات,3269340c-111f-4185-8f69-77eb961a1193,true,false
+e930f267-61e3-4219-8938-8ce89305b49a,ENUM_TYPE,ICCIMA,Iran Chamber of Commerce,اتاق بازرگانی، صنایع، معادن و کشاورزی,اعتبارسنجی از طریق کارت بازرگانی، استعلام عضویت,3269340c-111f-4185-8f69-77eb961a1193,true,false
+9e578789-f712-48fc-ad66-23f68188d380,ENUM_TYPE,GCH,Iran Guilds Chamber,اتاق اصناف ایران,صدور پروانه کسب و نظارت بر واحدهای صنفی (برای پیمانکاران حقیقی),3269340c-111f-4185-8f69-77eb961a1193,true,false
+3b70104f-b778-4991-a007-486673e30406,ENUM_TYPE,IOA,Industrial Guild Organization,سازمان نظام صنفی,رسیدگی به تخلفات صنفی و انضباط حرفه‌ای,3269340c-111f-4185-8f69-77eb961a1193,true,false
+becdf620-973d-4eeb-883f-2b357f9ab20f,ENUM_TYPE,AOB,Audit Organization,سازمان حسابرسی,به عنوان بازرس قانونی شرکت، بر انطباق مالی معاملات نظارت دارد,3269340c-111f-4185-8f69-77eb961a1193,true,false
+2d6b4fb4-1002-439c-a936-ab06977f9e47,ENUM_TYPE,AIB,Approved Inspection Bodies,شرکت‌های بازرسی فنی تأییدشده,بازرسی فنی و کیفی کالاها در هنگام تحویل (بازرسی منشأ یا مقصد),3269340c-111f-4185-8f69-77eb961a1193,true,false
+95b7149a-c0a8-4db3-9920-4893a6a6cf4b,ENUM_TYPE,ENUM_COMMITTEE_FORMAT,انواع روش برگزاری کمیسیون معاملات,انواع روش برگزاری کمیسیون معاملات,Parent category for انواع روش برگزاری کمیسیون معاملات,,true,false
+a46d447a-b18a-485e-8021-0182217f305c,ENUM_TYPE,IPC,In-Person Committee,کمیسیون حضوری,جلسه با حضور فیزیکی اعضای کمیسیون در یک محل مشخص برگزار می‌شود.,95b7149a-c0a8-4db3-9920-4893a6a6cf4b,true,false
+7942baa7-6920-4b70-aaab-afd857438171,ENUM_TYPE,OVC,Online Video Conference Committee,کمیسیون ویدئوکنفرانسی,جلسه از طریق سامانه ویدئوکنفرانس یا ارتباط آنلاین برگزار می‌شود.,95b7149a-c0a8-4db3-9920-4893a6a6cf4b,true,false
+03225f08-b0a4-4524-8759-bc6fc616faba,ENUM_TYPE,HBC,Hybrid Committee,کمیسیون ترکیبی,بخشی از اعضا حضوری و بخشی از طریق ارتباط آنلاین در جلسه شرکت می‌کنند.,95b7149a-c0a8-4db3-9920-4893a6a6cf4b,true,false
+cf1b1f97-a3e0-4ff2-bcf7-92e996d8da82,ENUM_TYPE,CRC,Correspondence Committee,کمیسیون مکاتبه‌ای,تصمیم‌گیری بدون تشکیل جلسه هم‌زمان و از طریق گردش مستندات (فیزیکی یا الکترونیکی) انجام می‌شود.,95b7149a-c0a8-4db3-9920-4893a6a6cf4b,true,false
+d639834e-04ee-488d-b124-f15420239b1d,ENUM_TYPE,EMC,Emergency Committee,کمیسیون فوق‌العاده,برای موارد فوری و خارج از برنامه عادی تشکیل می‌شود و می‌تواند حضوری، آنلاین یا ترکیبی برگزار شود.,95b7149a-c0a8-4db3-9920-4893a6a6cf4b,true,false
+d5adadca-392c-441a-979f-d66ef40d6f68,ENUM_TYPE,RGC,Regular Committee,کمیسیون عادی,جلسات بر اساس تقویم مشخص (هفتگی، ماهانه یا دوره‌ای) و مطابق آیین‌نامه داخلی برگزار می‌شود.,95b7149a-c0a8-4db3-9920-4893a6a6cf4b,true,false
+93bb9163-290e-448b-a936-6ea1122243d1,ENUM_TYPE,ENUM_BUSINESS_DOMAIN,حوزه‌های تخصصی کسب و کار,حوزه‌های تخصصی کسب و کار,Parent category for حوزه‌های تخصصی کسب و کار,,true,false
+ca36fe6d-2a6b-4ac8-bf53-de53aec29611,ENUM_TYPE,GME,"Goods, Materials & Equipment",بازرگانی (کالا، مواد و تجهیزات),تأمین، خرید و مدیریت کالاها، مواد اولیه، قطعات و تجهیزات,93bb9163-290e-448b-a936-6ea1122243d1,true,false
+63f84706-f14f-41aa-9c21-abd02563fa7f,ENUM_TYPE,COM,"Contracting, Operations & Maintenance",خدمات پیمانکاری، عملیات و نگهداری,قراردادهای اجرایی، عملیات، تعمیرات و نگهداری,93bb9163-290e-448b-a936-6ea1122243d1,true,false
+f12a4033-9430-4072-b846-1fa0df076d3c,ENUM_TYPE,TEL,"Technical, Engineering & Laboratory",خدمات فنی، مهندسی و آزمایشگاهی,طراحی، مهندسی، آزمایشگاه، بازرسی و خدمات فنی,93bb9163-290e-448b-a936-6ea1122243d1,true,false
+40d9b4f6-2115-4c6c-92a0-aa542fd7e8cf,ENUM_TYPE,CLMP,"Consulting, Legal, Management & Planning",مشاوره، حقوقی، مدیریت و برنامه‌ریزی,مطالعات، مشاوره، برنامه‌ریزی، حقوقی و مدیریت,93bb9163-290e-448b-a936-6ea1122243d1,true,false
+2aea130a-ac57-4e50-9e38-8e6530f61866,ENUM_TYPE,FIFI,"Finance, Insurance, Forex & Investment",مالی، بیمه، ارز و سرمایه‌گذاری,امور مالی، خزانه‌داری، بیمه و سرمایه‌گذاری,93bb9163-290e-448b-a936-6ea1122243d1,true,false
+517de852-d8c6-4e18-bd15-004ec02c0968,ENUM_TYPE,ITDC,"IT, Data, Cybersecurity & Digital Transformation",فناوری اطلاعات و تحول دیجیتال,فناوری اطلاعات، داده، امنیت سایبری و تحول دیجیتال,93bb9163-290e-448b-a936-6ea1122243d1,true,false
+a1fe370d-aee9-470e-bead-0d82c717db1f,ENUM_TYPE,TRSE,"Training, Research & Human Development",آموزش، پژوهش و توسعه منابع انسانی,آموزش، توانمندسازی، پژوهش و توسعه سرمایه انسانی,93bb9163-290e-448b-a936-6ea1122243d1,true,false
+cb9e9387-bf71-40d1-bd3c-815f0e95dae2,ENUM_TYPE,PRRI,"Partnership, Real Estate & Intellectual Property",مشارکت، املاک و دارایی‌های فکری,مشارکت‌ها، املاک، برند، پتنت و IP,93bb9163-290e-448b-a936-6ea1122243d1,true,false
+986def39-787e-4bd0-b5c0-3a51dc0558c5,ENUM_TYPE,LTCW,"Logistics, Transport, Customs & Warehousing",لجستیک، حمل‌ونقل و زنجیره تأمین,حمل‌ونقل، گمرک، انبارداری و لجستیک,93bb9163-290e-448b-a936-6ea1122243d1,true,false
+29351b83-d158-406f-9bff-f31e2cc2e230,ENUM_TYPE,SWC,"Support, Welfare & Cultural Services",خدمات پشتیبانی، رفاهی و فرهنگی,خدمات عمومی، رفاهی، فرهنگی و پشتیبانی,93bb9163-290e-448b-a936-6ea1122243d1,true,false
+80a5f5ba-2533-4695-9b83-c51048b83fa3,ENUM_TYPE,MAV,"Medical, Agricultural & Veterinary Services",خدمات درمانی، کشاورزی و دامپزشکی,خدمات سلامت، کشاورزی و دامپزشکی,93bb9163-290e-448b-a936-6ea1122243d1,true,false
+f68f8d25-202e-4cca-8bce-bbf54977c237,ENUM_TYPE,CSR,CSR & Sustainability,مسئولیت اجتماعی و توسعه پایدار,مسئولیت اجتماعی، محیط پیرامونی و توسعه پایدار,93bb9163-290e-448b-a936-6ea1122243d1,true,false
+71d10ba7-fc59-493f-b6bb-5c7000cf1733,ENUM_TYPE,SCM,Supply Chain & Commercial Management,بازرگانی و فروش,تأمین، خرید، فروش، صادرات و واردات,93bb9163-290e-448b-a936-6ea1122243d1,true,false
+22fae2e8-563c-4872-ae75-cec7b54ba40e,ENUM_TYPE,HSE,"Health, Safety & Environment",بهداشت، ایمنی و محیط زیست,مدیریت HSE و الزامات مرتبط,93bb9163-290e-448b-a936-6ea1122243d1,true,false
+acfa117c-d662-45a8-a854-a7bff01e835e,ENUM_TYPE,EXG,Exploration & Geology,اکتشاف و زمین‌شناسی,فعالیت‌های اکتشافی و زمین‌شناسی,93bb9163-290e-448b-a936-6ea1122243d1,true,false
+5cb13693-febc-4d5e-81cc-52e6e8bf961f,ENUM_TYPE,PCP,Production Planning & Control,برنامه‌ریزی و کنترل تولید,برنامه‌ریزی، کنترل و پایش تولید,93bb9163-290e-448b-a936-6ea1122243d1,true,false
+a9a8ee0e-8f24-4997-962b-75a128a16d2d,ENUM_TYPE,ENU,Energy & Utilities,انرژی و تأسیسات,انرژی، آب، برق، سوخت و تأسیسات,93bb9163-290e-448b-a936-6ea1122243d1,true,false
+08c2958a-d49c-44a8-b56e-76910fe75704,ENUM_TYPE,QAS,Quality Assurance & Inspection,کیفیت و تضمین کیفیت,کیفیت، بازرسی و آزمون,93bb9163-290e-448b-a936-6ea1122243d1,true,false
+3fba5a58-ee13-4312-947b-6cb783f46bd1,ENUM_TYPE,IPA,International Affairs & Foreign Investment,امور بین‌الملل و سرمایه‌گذاری خارجی,همکاری‌های بین‌المللی و سرمایه‌گذاری خارجی,93bb9163-290e-448b-a936-6ea1122243d1,true,false
+832f8572-0158-4818-834f-d1efd5b89261,ENUM_TYPE,PAD,Passive Defense & Crisis Management,پدافند غیرعامل و مدیریت بحران,تاب‌آوری، بحران و پدافند غیرعامل,93bb9163-290e-448b-a936-6ea1122243d1,true,false
+1e6aa780-517c-42fe-b531-3044b14a0d48,ENUM_TYPE,ENUM_ORGANIZATION_NATURE,ماهیت سازمانی جلسه,ماهیت سازمانی جلسه,Parent category for ماهیت سازمانی جلسه,,true,false
+08ae7ad9-aea0-4853-aa8f-2767d3b630fe,ENUM_TYPE,GOV,Governance,حاکمیتی,سیاست‌گذاری، راهبری و نظارت کلان,1e6aa780-517c-42fe-b531-3044b14a0d48,true,false
+99f351fc-d78d-4381-b6ee-c301a356ca6a,ENUM_TYPE,DEC,Decision Making,تصمیم‌گیر,تصویب و اتخاذ تصمیم,1e6aa780-517c-42fe-b531-3044b14a0d48,true,false
+92ef5fe1-5ab9-4a52-a221-656402b133c7,ENUM_TYPE,ADV,Advisory,مشورتی,ارائه نظر تخصصی و مشاوره,1e6aa780-517c-42fe-b531-3044b14a0d48,true,false
+6585397b-051d-406c-9927-2ba6bb869130,ENUM_TYPE,REV,Review & Oversight,نظارتی و ارزیابی,کنترل، ارزیابی و پایش,1e6aa780-517c-42fe-b531-3044b14a0d48,true,false
+727819df-8b20-4645-a73c-600c03994184,ENUM_TYPE,EXE,Execution,اجرایی,اجرا، هماهنگی و پیگیری,1e6aa780-517c-42fe-b531-3044b14a0d48,true,false
+1975de16-db72-49d1-b187-014777a20e94,ENUM_TYPE,TSK,Task Force,مأموریتی و موقت,مأموریت‌های خاص، بحران‌ها و اقدامات ویژه,1e6aa780-517c-42fe-b531-3044b14a0d48,true,false
+af321485-7578-42d0-b21e-2d268c0a0921,ENUM_TYPE,ENUM_SUBJECT_CATEGORY,حوزه موضوعی جلسه,حوزه موضوعی جلسه,Parent category for حوزه موضوعی جلسه,,true,false
+5048c04f-0fb9-44f3-8fa3-1870ed9f9000,ENUM_TYPE,STR,Strategy & Governance,استراتژی و راهبردی,سیاست‌گذاری، راهبری، اهداف کلان، برنامه‌های راهبردی و حاکمیت سازمانی,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+778ca366-be8a-4123-a62b-3839fb18af0a,ENUM_TYPE,PRJ,Project Management,پروژه,مدیریت پروژه‌ها، کنترل پیشرفت، زمان، هزینه و عملکرد پروژه,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+a92b29a2-1364-433e-bd68-ddc2b0c670f2,ENUM_TYPE,PRG,Program Management,برنامه,مدیریت و هماهنگی مجموعه‌ای از پروژه‌های مرتبط,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+88f033cb-05ed-4d6c-9620-71ca837b3194,ENUM_TYPE,PFL,Portfolio Management,پورتفولیو,مدیریت سبد پروژه‌ها، سرمایه‌گذاری‌ها و اولویت‌بندی منابع,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+0a6cc0c2-7f4a-4a44-a18c-ebe913c882db,ENUM_TYPE,FIN,Finance & Treasury,مالی و خزانه‌داری,مدیریت منابع مالی، نقدینگی، پرداخت‌ها و دریافت‌ها,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+1d90aaa1-f278-4807-afb7-18c9db35e23f,ENUM_TYPE,ACC,Accounting,حسابداری,ثبت، کنترل و گزارشگری مالی و حسابداری,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+4f03bfb4-f018-4f74-9012-e4214e0b990c,ENUM_TYPE,BUD,Budgeting & Financial Planning,بودجه و برنامه‌ریزی مالی,تدوین، تخصیص، کنترل و بازنگری بودجه,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+79dc95f7-06bb-4fa0-8c8a-ec961661f120,ENUM_TYPE,INV,Investment Management,سرمایه‌گذاری,بررسی و مدیریت طرح‌ها و فرصت‌های سرمایه‌گذاری,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+a8ba7b86-0d96-4aa4-bd36-a67abccba482,ENUM_TYPE,CON,Contract Management,قراردادها,مدیریت چرخه عمر قراردادها و تعهدات قراردادی,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+f045bdf8-91ab-4059-a1d7-da0702fe2d07,ENUM_TYPE,PRC,Procurement Management,تأمین و خرید,خرید کالا، خدمات و مدیریت تأمین‌کنندگان,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+15bdaa0f-09d8-4555-a03e-b7ba9256df52,ENUM_TYPE,TEN,Tender & Auction Management,مناقصه و مزایده,فرآیندهای رقابتی انتخاب پیمانکار، فروش یا واگذاری,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+e709aab8-7797-4896-86b6-bdd180bb2d43,ENUM_TYPE,HRM,Human Resource Management,منابع انسانی,جذب، انتصاب، ارزیابی، توسعه و نگهداشت سرمایه انسانی,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+0b66aa67-ef90-43d9-a218-70970fccf3a0,ENUM_TYPE,ORG,Organizational Development,توسعه سازمانی,ساختار سازمانی، بهره‌وری، تحول و بهبود سازمان,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+225720fb-b8a1-4644-9fe2-158b7e67d648,ENUM_TYPE,TRN,Training & Development,آموزش و توسعه,برنامه‌ریزی و مدیریت آموزش و توانمندسازی,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+c73e04b9-36bc-42b6-8e16-dd8a29b76afb,ENUM_TYPE,ITM,Information Technology,فناوری اطلاعات,زیرساخت، سامانه‌ها، نرم‌افزارها و خدمات فناوری اطلاعات,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+e014ef46-dbc5-433f-819c-9ac1f4e553de,ENUM_TYPE,DAT,Data & Business Intelligence,داده و هوش تجاری,مدیریت داده، تحلیل اطلاعات و گزارش‌گیری مدیریتی,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+6b88f1bb-d7b6-406a-85f1-fb88913cf8e3,ENUM_TYPE,SEC,Information Security,امنیت اطلاعات,امنیت سایبری، کنترل دسترسی و حفاظت اطلاعات,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+2db3bc6f-e7ff-4eae-b3c2-c7ccb529a07a,ENUM_TYPE,OPS,Operations Management,عملیات,مدیریت عملیات جاری و فعالیت‌های اجرایی,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+b23959a5-80f9-4224-9b34-b804c26635a7,ENUM_TYPE,PRD,Production Management,تولید,برنامه‌ریزی، کنترل و مدیریت فرآیندهای تولید,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+5b995a41-b4ee-4f9b-8fca-a896b5ef0cd4,ENUM_TYPE,ENG,Engineering Management,مهندسی و فنی,طراحی، مهندسی، مطالعات فنی و پشتیبانی تخصصی,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+a11f484e-51b5-4f49-8835-cc3b55a6c2d2,ENUM_TYPE,MNT,Maintenance Management,نگهداری و تعمیرات,نگهداری پیشگیرانه، اصلاحی و مدیریت تجهیزات,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+463f1d15-81b7-4206-87ab-ea468bc3c366,ENUM_TYPE,AST,Asset Management,مدیریت دارایی‌ها,مدیریت دارایی‌های فیزیکی و سرمایه‌ای سازمان,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+e856dd01-f7af-4639-abee-578fd6a4c660,ENUM_TYPE,SCM,Supply Chain Management,زنجیره تأمین,مدیریت تأمین، حمل، انبارش و توزیع,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+3b3f5ff5-b773-482e-9460-6c3750570684,ENUM_TYPE,LOG,Logistics Management,لجستیک,مدیریت حمل‌ونقل، توزیع و پشتیبانی لجستیکی,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+f9840e7f-c327-4ac6-831f-8850f436826d,ENUM_TYPE,QLT,Quality Management,کیفیت,تضمین کیفیت، کنترل کیفیت و بهبود مستمر,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+6f2716d1-29e7-4f59-a34f-4fe505899470,ENUM_TYPE,HSE,HSE Management,ایمنی، بهداشت و محیط زیست,مدیریت ایمنی، سلامت شغلی و محیط زیست,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+00d9d7f5-bc29-46da-8419-d667928de092,ENUM_TYPE,RSK,Risk Management,مدیریت ریسک,شناسایی، ارزیابی و کنترل ریسک‌ها,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+ba87bc80-68aa-4665-8d9f-4f2a832abcaa,ENUM_TYPE,AUD,Audit Management,حسابرسی,حسابرسی داخلی، خارجی و کنترل‌های سازمانی,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+b83642a9-586a-440a-bd0a-1c5b240a2cd3,ENUM_TYPE,CMP,Compliance Management,انطباق و مقررات,انطباق با قوانین، مقررات و الزامات سازمانی,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+221d4757-2eed-4023-80a5-ab0c7326f687,ENUM_TYPE,LEG,Legal Affairs Management,امور حقوقی,دعاوی، مشاوره حقوقی و امور حقوقی سازمان,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+e2e0ff5e-7a23-4e46-85ab-8dbefb0c410a,ENUM_TYPE,CRM,Customer & Stakeholder Management,مشتریان و ذینفعان,مدیریت ارتباط با مشتریان و ذینفعان,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+7d6f65d1-6739-4237-90e9-dc928bf07d73,ENUM_TYPE,MKT,Marketing Management,بازاریابی,تحقیقات بازار، تبلیغات و توسعه بازار,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+86fc0711-6773-4bd1-8e01-57276d76597a,ENUM_TYPE,SAL,Sales Management,فروش,مدیریت فروش، درآمد و مشتریان,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+e9e55a2a-90de-480b-a122-a79587cdf502,ENUM_TYPE,RND,Research & Development,تحقیق و توسعه,پژوهش، نوآوری و توسعه فناوری,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+1f06ed96-99bd-4af2-9442-877d06fb4390,ENUM_TYPE,SUS,Sustainability & CSR,پایداری و مسئولیت اجتماعی,توسعه پایدار، مسئولیت اجتماعی و ESG,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+022ded87-68b6-43d9-b71e-4b3fae287569,ENUM_TYPE,CRS,Crisis & Business Continuity Management,مدیریت بحران و تداوم کسب‌وکار,مدیریت بحران، شرایط اضطراری و تداوم فعالیت,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+8610cdc9-b99f-4a0d-82a3-aee8552be0cd,ENUM_TYPE,ADM,Administration & Support Services,امور اداری و پشتیبانی,خدمات اداری، رفاهی و پشتیبانی عمومی,af321485-7578-42d0-b21e-2d268c0a0921,true,false
+e5b898c9-6030-499d-b16a-19d940bea997,ENUM_TYPE,COM,Communications & Public Relations,ارتباطات و روابط عمومی,ارتباطات سازمانی، رسانه و روابط عمومی,af321485-7578-42d0-b21e-2d268c0a0921,true,false

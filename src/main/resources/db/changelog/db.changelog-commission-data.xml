@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <!-- ============================================ -->
+    <!-- اول: تغییر سایز description به 2000 -->
+    <!-- ============================================ -->
+    <changeSet id="20260614-alter-description-size" author="seyyed">
+        <comment>Increase description column size to 2000 for Persian text support</comment>
+        <modifyDataType
+                tableName="base_info"
+                columnName="description"
+                newDataType="VARCHAR(2000)"/>
+    </changeSet>
+
+    <!-- ============================================ -->
+    <!-- بعد: لود داده‌ها -->
+    <!-- ============================================ -->
+    <changeSet id="20260610-commission-base-info-data" author="system">
+        <comment>Load commission base info lookup data from CSV</comment>
+        <loadData
+                tableName="base_info"
+                file="db/changelog/data/commission-base-info.csv"
+                separator=","
+                encoding="UTF-8">
+            <column name="id" type="STRING"/>
+            <column name="type" type="STRING"/>
+            <column name="code" type="STRING"/>
+            <column name="latin" type="STRING"/>
+            <column name="persian" type="STRING"/>
+            <column name="description" type="STRING"/>
+            <column name="parent_id" type="STRING"/>
+            <column name="is_active" type="BOOLEAN"/>
+            <column name="is_default" type="BOOLEAN"/>
+        </loadData>
+    </changeSet>
+
+</databaseChangeLog>

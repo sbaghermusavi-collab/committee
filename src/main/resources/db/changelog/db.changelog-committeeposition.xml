@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+
+    <changeSet id="1-committeeposition-create-table" author="seyyed">
+        <createTable tableName="committee_position">
+            <column name="id" type="VARCHAR(36)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="committee_id" type="VARCHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="position_id" type="VARCHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="is_nicico_chart" type="BOOLEAN" defaultValueBoolean="true">
+                <constraints nullable="false"/>
+            </column>
+            <column name="num_member" type="INT" defaultValueNumeric="1">
+                <constraints nullable="false"/>
+            </column>
+            <column name="can_vote" type="BOOLEAN" defaultValueBoolean="false">
+                <constraints nullable="false"/>
+            </column>
+            <column name="can_signature" type="BOOLEAN" defaultValueBoolean="false">
+                <constraints nullable="false"/>
+            </column>
+            <column name="can_alternate" type="BOOLEAN" defaultValueBoolean="false">
+                <constraints nullable="false"/>
+            </column>
+            <column name="can_see_doc" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="presence_type_id" type="VARCHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="attendance_condition_id" type="VARCHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="is_active" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+
+            <!-- Auditable Fields -->
+            <column name="d_created_date" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="c_created_by" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="d_last_modified_date" type="TIMESTAMP"/>
+            <column name="c_last_modified_by" type="VARCHAR(255)"/>
+            <column name="n_version" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint
+                baseColumnNames="committee_id"
+                baseTableName="committee_position"
+                constraintName="fk_committeeposition_committee"
+                referencedColumnNames="id"
+                referencedTableName="committee"/>
+
+        <addForeignKeyConstraint
+                baseColumnNames="position_id"
+                baseTableName="committee_position"
+                constraintName="fk_committeeposition_position"
+                referencedColumnNames="id"
+                referencedTableName="base_info"/>
+
+        <addForeignKeyConstraint
+                baseColumnNames="presence_type_id"
+                baseTableName="committee_position"
+                constraintName="fk_committeeposition_presence_type"
+                referencedColumnNames="id"
+                referencedTableName="base_info"/>
+
+        <addForeignKeyConstraint
+                baseColumnNames="attendance_condition_id"
+                baseTableName="committee_position"
+                constraintName="fk_committeeposition_attendance_condition"
+                referencedColumnNames="id"
+                referencedTableName="base_info"/>
+    </changeSet>
+    <changeSet id="1781615566697-2" author="seyyed">
+        <renameColumn tableName="committee_position" oldColumnName="is_nicico_chart" newColumnName="is_nicico"/>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="commission-meeting-tables" author="noor">
+
+        <!-- Meeting -->
+        <createTable tableName="meeting">
+            <column name="id" type="varchar(36)"><constraints primaryKey="true" nullable="false"/></column>
+            <column name="commission_id" type="varchar(36)"><constraints nullable="false"/></column>
+            <column name="code" type="varchar(255)"><constraints nullable="false"/></column>
+            <column name="meeting_number" type="varchar(255)"/>
+            <column name="meeting_date" type="date"><constraints nullable="false"/></column>
+            <column name="meeting_start_time" type="varchar(5)"><constraints nullable="false"/></column>
+            <column name="meeting_end_time" type="varchar(5)"/>
+            <column name="location_id" type="varchar(36)"/>
+            <column name="address" type="nvarchar2(500)"/>
+            <column name="meeting_link" type="varchar(500)"/>
+            <column name="agenda" type="nvarchar2(2000)"><constraints nullable="false"/></column>
+            <column name="meeting_nature_id" type="varchar(36)"><constraints nullable="false"/></column>
+            <column name="status_id" type="varchar(36)"><constraints nullable="false"/></column>
+            <column name="document_ids" type="clob"/>
+            <column name="document_link_ids" type="clob"/>
+            <column name="d_created_date" type="timestamp"><constraints nullable="false"/></column>
+            <column name="c_created_by" type="varchar(255)"><constraints nullable="false"/></column>
+            <column name="n_version" type="number(19)"><constraints nullable="false"/></column>
+        </createTable>
+
+        <!-- MeetingAgendaItem -->
+        <createTable tableName="meeting_agenda_item">
+            <column name="id" type="varchar(36)"><constraints primaryKey="true" nullable="false"/></column>
+            <column name="meeting_id" type="varchar(36)"><constraints nullable="false"/></column>
+            <column name="item_order" type="number(10)"><constraints nullable="false"/></column>
+            <column name="presentation_count" type="number(10)" defaultValueNumeric="1"><constraints nullable="false"/></column>
+            <column name="title" type="nvarchar2(500)"><constraints nullable="false"/></column>
+            <column name="description" type="nvarchar2(2000)"/>
+            <column name="agenda_decision_type_id" type="varchar(36)"><constraints nullable="false"/></column>
+            <column name="decision" type="nvarchar2(2000)"/>
+            <column name="agenda_item_status_id" type="varchar(36)"/>
+            <column name="d_created_date" type="timestamp"><constraints nullable="false"/></column>
+            <column name="c_created_by" type="varchar(255)"><constraints nullable="false"/></column>
+            <column name="n_version" type="number(19)"><constraints nullable="false"/></column>
+        </createTable>
+
+        <!-- MeetingAttendance -->
+        <createTable tableName="meeting_attendance">
+            <column name="id" type="varchar(36)"><constraints primaryKey="true" nullable="false"/></column>
+            <column name="meeting_id" type="varchar(36)"><constraints nullable="false"/></column>
+            <column name="assignment_id" type="varchar(36)"><constraints nullable="false"/></column>
+            <column name="attendance_status" type="varchar(50)"><constraints nullable="false"/></column>
+            <column name="delegate_member_id" type="varchar(36)"/>
+            <column name="delegate_status" type="varchar(50)"/>
+            <column name="signed_minutes" type="number(1)" defaultValueNumeric="0"><constraints nullable="false"/></column>
+            <column name="position_id" type="varchar(36)"><constraints nullable="false"/></column>
+            <column name="is_nicico" type="number(1)" defaultValueNumeric="1"><constraints nullable="false"/></column>
+            <column name="can_vote" type="number(1)" defaultValueNumeric="0"><constraints nullable="false"/></column>
+            <column name="can_signature" type="number(1)" defaultValueNumeric="0"><constraints nullable="false"/></column>
+            <column name="can_see_doc" type="varchar(255)"/>
+            <column name="presence_type_id" type="varchar(36)"><constraints nullable="false"/></column>
+            <column name="attendance_condition_id" type="varchar(36)"><constraints nullable="false"/></column>
+            <column name="nicico_position_id" type="varchar(36)"/>
+            <column name="national_code" type="varchar(10)"><constraints nullable="false"/></column>
+            <column name="alternate_member" type="number(1)" defaultValueNumeric="0"><constraints nullable="false"/></column>
+            <column name="alt_nicico_position_id" type="varchar(36)"/>
+            <column name="alt_member_national_code" type="varchar(10)"/>
+            <column name="nonicico_titel" type="nvarchar2(500)"/>
+            <column name="signed_attendance_document_id" type="varchar(36)"/>
+            <column name="document_ids" type="clob"/>
+            <column name="document_link_ids" type="clob"/>
+            <column name="d_created_date" type="timestamp"><constraints nullable="false"/></column>
+            <column name="c_created_by" type="varchar(255)"><constraints nullable="false"/></column>
+            <column name="n_version" type="number(19)"><constraints nullable="false"/></column>
+        </createTable>
+
+        <!-- MeetingItemInvitation -->
+        <createTable tableName="meeting_item_invitation">
+            <column name="id" type="varchar(36)"><constraints primaryKey="true" nullable="false"/></column>
+            <column name="meeting_id" type="varchar(36)"><constraints nullable="false"/></column>
+            <column name="agenda_item_id" type="varchar(36)"/>
+            <column name="is_nicico" type="number(1)" defaultValueNumeric="1"><constraints nullable="false"/></column>
+            <column name="position_id" type="varchar(36)"><constraints nullable="false"/></column>
+            <column name="nicico_position_id" type="varchar(36)"/>
+            <column name="national_code" type="varchar(10)"/>
+            <column name="is_required" type="number(1)" defaultValueNumeric="1"/>
+            <column name="can_vote" type="number(1)" defaultValueNumeric="0"><constraints nullable="false"/></column>
+            <column name="can_signature" type="number(1)" defaultValueNumeric="0"><constraints nullable="false"/></column>
+            <column name="can_see_doc" type="varchar(255)"/>
+            <column name="email" type="varchar(255)"/>
+            <column name="phone" type="varchar(20)"/>
+            <column name="company_id" type="varchar(255)"/>
+            <column name="guest_position" type="nvarchar2(500)"/>
+            <column name="invitation_status" type="varchar(50)"/>
+            <column name="attendance_status" type="varchar(50)"/>
+            <column name="invitation_sent_date" type="timestamp"/>
+            <column name="response_date" type="timestamp"/>
+            <column name="document_ids" type="clob"/>
+            <column name="document_link_ids" type="clob"/>
+            <column name="notes" type="nvarchar2(2000)"/>
+            <column name="d_created_date" type="timestamp"><constraints nullable="false"/></column>
+            <column name="c_created_by" type="varchar(255)"><constraints nullable="false"/></column>
+            <column name="n_version" type="number(19)"><constraints nullable="false"/></column>
+        </createTable>
+
+        <!-- MeetingQuorum -->
+        <createTable tableName="meeting_quorum">
+            <column name="id" type="varchar(36)"><constraints primaryKey="true" nullable="false"/></column>
+            <column name="meeting_id" type="varchar(36)"><constraints nullable="false"/></column>
+            <column name="required_members" type="number(10)"><constraints nullable="false"/></column>
+            <column name="actual_present" type="number(10)"><constraints nullable="false"/></column>
+            <column name="is_valid" type="number(1)"><constraints nullable="false"/></column>
+            <column name="meeting_invalid_reason_ids" type="clob"/>
+            <column name="quorum_note" type="nvarchar2(2000)"/>
+            <column name="d_created_date" type="timestamp"><constraints nullable="false"/></column>
+            <column name="c_created_by" type="varchar(255)"><constraints nullable="false"/></column>
+            <column name="n_version" type="number(19)"><constraints nullable="false"/></column>
+        </createTable>
+
+        <!-- MeetingDecision -->
+        <createTable tableName="meeting_decision">
+            <column name="id" type="varchar(36)"><constraints primaryKey="true" nullable="false"/></column>
+            <column name="meeting_id" type="varchar(36)"><constraints nullable="false"/></column>
+            <column name="agenda_item_id" type="varchar(36)"/>
+            <column name="subject" type="nvarchar2(1000)"><constraints nullable="false"/></column>
+            <column name="description" type="clob"/>
+            <column name="suggester_ids" type="clob"/>
+            <column name="voting_method" type="varchar(50)"/>
+            <column name="decision_type_id" type="varchar(36)"/>
+            <column name="referral_meeting_id" type="varchar(36)"/>
+            <column name="decision_date" type="date"><constraints nullable="false"/></column>
+            <column name="due_date" type="date"/>
+            <column name="is_active" type="number(1)" defaultValueNumeric="1"><constraints nullable="false"/></column>
+            <column name="d_created_date" type="timestamp"><constraints nullable="false"/></column>
+            <column name="c_created_by" type="varchar(255)"><constraints nullable="false"/></column>
+            <column name="n_version" type="number(19)"><constraints nullable="false"/></column>
+        </createTable>
+
+        <!-- MeetingDecisionVote -->
+        <createTable tableName="meeting_decision_vote">
+            <column name="id" type="varchar(36)"><constraints primaryKey="true" nullable="false"/></column>
+            <column name="decision_id" type="varchar(36)"><constraints nullable="false"/></column>
+            <column name="member_id" type="varchar(36)"><constraints nullable="false"/></column>
+            <column name="national_code" type="varchar(10)"/>
+            <column name="vote_type" type="varchar(50)"/>
+            <column name="conditional_description" type="nvarchar2(2000)"/>
+            <column name="hidden_vote" type="number(1)" defaultValueNumeric="1"><constraints nullable="false"/></column>
+            <column name="d_created_date" type="timestamp"><constraints nullable="false"/></column>
+            <column name="c_created_by" type="varchar(255)"><constraints nullable="false"/></column>
+            <column name="n_version" type="number(19)"><constraints nullable="false"/></column>
+        </createTable>
+
+        <!-- Foreign Keys -->
+        <addForeignKeyConstraint baseTableName="meeting" baseColumnNames="commission_id" constraintName="fk_meeting_commission" referencedTableName="committee" referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="meeting" baseColumnNames="meeting_nature_id" constraintName="fk_meeting_nature" referencedTableName="base_info" referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="meeting" baseColumnNames="status_id" constraintName="fk_meeting_status" referencedTableName="base_info" referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="meeting" baseColumnNames="location_id" constraintName="fk_meeting_location" referencedTableName="base_info" referencedColumnNames="id"/>
+
+        <addForeignKeyConstraint baseTableName="meeting_agenda_item" baseColumnNames="meeting_id" constraintName="fk_agenda_meeting" referencedTableName="meeting" referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="meeting_agenda_item" baseColumnNames="agenda_decision_type_id" constraintName="fk_agenda_decision_type" referencedTableName="base_info" referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="meeting_agenda_item" baseColumnNames="agenda_item_status_id" constraintName="fk_agenda_status" referencedTableName="base_info" referencedColumnNames="id"/>
+
+        <addForeignKeyConstraint baseTableName="meeting_attendance" baseColumnNames="meeting_id" constraintName="fk_attendance_meeting" referencedTableName="meeting" referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="meeting_attendance" baseColumnNames="assignment_id" constraintName="fk_attendance_assignment" referencedTableName="committee_member_assignment" referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="meeting_attendance" baseColumnNames="position_id" constraintName="fk_attendance_position" referencedTableName="base_info" referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="meeting_attendance" baseColumnNames="presence_type_id" constraintName="fk_attendance_presence" referencedTableName="base_info" referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="meeting_attendance" baseColumnNames="attendance_condition_id" constraintName="fk_attendance_condition" referencedTableName="base_info" referencedColumnNames="id"/>
+
+        <addForeignKeyConstraint baseTableName="meeting_item_invitation" baseColumnNames="meeting_id" constraintName="fk_invitation_meeting" referencedTableName="meeting" referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="meeting_item_invitation" baseColumnNames="agenda_item_id" constraintName="fk_invitation_agenda" referencedTableName="meeting_agenda_item" referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="meeting_item_invitation" baseColumnNames="position_id" constraintName="fk_invitation_position" referencedTableName="base_info" referencedColumnNames="id"/>
+
+        <addForeignKeyConstraint baseTableName="meeting_quorum" baseColumnNames="meeting_id" constraintName="fk_quorum_meeting" referencedTableName="meeting" referencedColumnNames="id"/>
+
+        <addForeignKeyConstraint baseTableName="meeting_decision" baseColumnNames="meeting_id" constraintName="fk_decision_meeting" referencedTableName="meeting" referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="meeting_decision" baseColumnNames="agenda_item_id" constraintName="fk_decision_agenda" referencedTableName="meeting_agenda_item" referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="meeting_decision" baseColumnNames="decision_type_id" constraintName="fk_decision_type" referencedTableName="base_info" referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="meeting_decision" baseColumnNames="referral_meeting_id" constraintName="fk_decision_referral" referencedTableName="meeting" referencedColumnNames="id"/>
+
+        <addForeignKeyConstraint baseTableName="meeting_decision_vote" baseColumnNames="decision_id" constraintName="fk_vote_decision" referencedTableName="meeting_decision" referencedColumnNames="id"/>
+    </changeSet>
+    <changeSet id="commission-meeting-add-audit-columns" author="seyyed">
+        <addColumn tableName="meeting">
+            <column name="d_last_modified_date" type="timestamp"/>
+            <column name="c_last_modified_by" type="varchar(255)"/>
+        </addColumn>
+        <addColumn tableName="meeting_agenda_item">
+            <column name="d_last_modified_date" type="timestamp"/>
+            <column name="c_last_modified_by" type="varchar(255)"/>
+        </addColumn>
+        <addColumn tableName="meeting_attendance">
+            <column name="d_last_modified_date" type="timestamp"/>
+            <column name="c_last_modified_by" type="varchar(255)"/>
+        </addColumn>
+        <addColumn tableName="meeting_item_invitation">
+            <column name="d_last_modified_date" type="timestamp"/>
+            <column name="c_last_modified_by" type="varchar(255)"/>
+        </addColumn>
+        <addColumn tableName="meeting_quorum">
+            <column name="d_last_modified_date" type="timestamp"/>
+            <column name="c_last_modified_by" type="varchar(255)"/>
+        </addColumn>
+        <addColumn tableName="meeting_decision">
+            <column name="d_last_modified_date" type="timestamp"/>
+            <column name="c_last_modified_by" type="varchar(255)"/>
+        </addColumn>
+        <addColumn tableName="meeting_decision_vote">
+            <column name="d_last_modified_date" type="timestamp"/>
+            <column name="c_last_modified_by" type="varchar(255)"/>
+        </addColumn>
+    </changeSet>
+</databaseChangeLog>

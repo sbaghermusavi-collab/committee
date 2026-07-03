@@ -2,7 +2,7 @@ spring:
   messages:
     encoding: UTF-8
   application:
-    name: companies
+    name: committee
     version: '@project.version@'
   profiles:
     active: dev
@@ -10,7 +10,9 @@ spring:
     hikari:
       connection-test-query: SELECT 1 FROM DUAL
       maximum-pool-size: 10
-
+  devtools:
+    restart:
+      enabled: false
   jpa:
     hibernate:
       ddl-auto: none
@@ -22,9 +24,8 @@ spring:
 
       hibernate:
         enable_lazy_load_no_trans: true
-        dialect: com.nicico.copper.common.hibernate.CustomOracleDialect
         hbm2ddl:
-          schema_filter_provider: com.nicico.copper.common.hibernate.CustomSchemaFilterProvider
+          schema_filter_provider: org.hibernate.Incubating.SchemaFilterProvider
     open-in-view: false
     show-sql: true
   liquibase:
@@ -52,7 +53,7 @@ server:
       charset: UTF-8
       force: true
       force-response: true
-    context-path: /companies-backend
+    context-path: /committee-backend
     session:
       cookie:
         name: App_${spring.application.name}
@@ -96,35 +97,13 @@ nicico:
     upload:
       dir: /var/nicico/${spring.application.name}/
 ---
-logging :
-  level:
-    liquibase : INFO
-
-#feign:
-#  client:
-#    config:
-#      hrm-post:
-#        errorDecoder: com.nicico.hse.config.HrmClientConfiguration
-#        requestInterceptors:
-#          - com.nicico.hse.config.HrmExternalRequestInterceptor
-#        connectTimeout: 60000
-#        readTimeout: 60000
-
 
 
 jasypt:
   encryptor:
     bean: stringEncryptor
 
-bpms:
-  service:
-    tenantId: companies
-    proposal_safety_agent_process_definition_key: aa6d7-a6c2e-aa302
-    proposal_workshop_agent_process_definition_key: a77b6-acc3e-acf18
-    request_periodic_allocation_workshop_definition_key: af39e-a7ab0-aa4e6
-    request_periodic_allocation_individual_definition_key: af39e-a7ab0-aa4e6
-    request_case_allocation_definition_key: a095d-a5dd8-adab5
-    request_declare_purchase_definition_key: a2edd-a610c-aa24a
+
 copper:
   security:
     policy:
@@ -141,3 +120,19 @@ feign:
 hrm:
   api:
     base-url: "http://devapp01.icico.net.ir/hrm-backend/"
+logging:
+  level:
+    root: INFO
+    org.springframework: DEBUG
+    org.springframework.boot.autoconfigure: DEBUG
+
+    org.springframework.orm.jpa: DEBUG
+
+    org.hibernate.SQL: DEBUG
+    org.hibernate.orm.jdbc.bind: TRACE
+    org.hibernate.jpa: DEBUG
+
+    com.zaxxer.hikari: DEBUG
+    liquibase : INFO
+
+

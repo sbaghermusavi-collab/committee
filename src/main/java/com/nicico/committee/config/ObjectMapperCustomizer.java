@@ -5,11 +5,9 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.nicico.committee.config.jackson.LocalDateSerializer;
 import com.nicico.committee.config.jackson.LocalDateTimeSerializer;
 import com.nicico.committee.config.jackson.TimestampToLocalDateDeserializer;
-import com.nicico.committee.entities.enums.BaseInfoType;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 

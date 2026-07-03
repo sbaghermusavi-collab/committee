@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+
+    <changeSet id="1-baseinfo-create-table" author="seyyed">
+        <createTable tableName="base_info">
+            <column name="id" type="VARCHAR(36)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="type" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="persian" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="latin" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="code" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="parent_id" type="VARCHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="is_active" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="is_default" type="BOOLEAN" defaultValueBoolean="false">
+                <constraints nullable="false"/>
+            </column>
+
+            <!-- Auditable Fields -->
+            <column name="d_created_date" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="c_created_by" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="d_last_modified_date" type="TIMESTAMP"/>
+            <column name="c_last_modified_by" type="VARCHAR(255)"/>
+            <column name="n_version" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addUniqueConstraint
+                columnNames="type, latin"
+                constraintName="uq_base_info_type_latin"
+                tableName="base_info"/>
+
+        <addForeignKeyConstraint
+                baseColumnNames="parent_id"
+                baseTableName="base_info"
+                constraintName="fk_baseinfo_parent"
+                referencedColumnNames="id"
+                referencedTableName="base_info"/>
+    </changeSet>
+    <changeSet id="1779717522297-1" author="seyyed">
+        <dropNotNullConstraint tableName="base_info" columnName="parent_id"/>
+        </changeSet>
+    <changeSet id="1780013358864-1" author="seyyed">
+        <addColumn tableName="base_info">
+            <column name="description" type="varchar(400)"></column>
+        </addColumn>
+    </changeSet>
+    <changeSet id="1780038095278-1" author="seyyed">
+        <addDefaultValue
+                tableName="base_info"
+                columnName="d_created_date"
+                defaultValueComputed="CURRENT_TIMESTAMP"/>
+        <addDefaultValue
+                tableName="base_info"
+                columnName="c_created_by"
+                defaultValue="anonymous"/>
+        <addDefaultValue
+                tableName="base_info"
+                columnName="n_version"
+                defaultValue="0"/>
+
+    </changeSet>
+    <changeSet id="1780038443301-1" author="seyyed">
+        <dropUniqueConstraint tableName="base_info" constraintName="UQ_BASE_INFO_TYPE_LATIN"/>
+        <addUniqueConstraint tableName="base_info" columnNames="parent_id,code"/>
+    </changeSet>
+
+    <changeSet id="20250529-2-insert-base-info-data" author="seyyed">
+        <comment>Load base info data from CSV with audit columns</comment>
+
+        <!-- Option 1: Using loadData with default values for audit columns -->
+        <loadData
+                tableName="base_info"
+                file="db/changelog/data/base-info-2.csv"
+                separator=","
+                encoding="UTF-8">
+
+            <column name="id" type="STRING"/>
+            <column name="type" type="STRING"/>
+            <column name="persian" type="STRING"/>
+            <column name="latin" type="STRING"/>
+            <column name="code" type="STRING"/>
+            <column name="parent_id" type="STRING"/>
+            <column name="is_active" type="BOOLEAN"/>
+            <column name="is_default" type="BOOLEAN"/>
+            <column name="description" type="STRING"/>
+        </loadData>
+
+    </changeSet>
+
+    <changeSet id="20250529-3-insert-base-info-data" author="seyyed">
+        <comment>Load base info data from CSV with audit columns</comment>
+
+        <!-- Option 1: Using loadData with default values for audit columns -->
+        <loadData
+                tableName="base_info"
+                file="db/changelog/data/base_info_v3.csv"
+                separator=","
+                encoding="UTF-8">
+
+            <column name="id" type="STRING"/>
+            <column name="type" type="STRING"/>
+            <column name="persian" type="STRING"/>
+            <column name="latin" type="STRING"/>
+            <column name="code" type="STRING"/>
+            <column name="parent_id" type="STRING"/>
+            <column name="is_active" type="BOOLEAN"/>
+            <column name="is_default" type="BOOLEAN"/>
+            <column name="description" type="STRING"/>
+        </loadData>
+
+    </changeSet>
+
+    <changeSet id="1781964791604-5" author="seyyed">
+        <update tableName="base_info">
+            <column name="parent_id" value="a7be017d-c7b1-4570-9f41-f4d166d7c254"/>
+            <where>parent_id = '218ebfaa-4e87-4d24-9da9-29727a9fa73d'</where>
+        </update>
+    </changeSet>
+
+</databaseChangeLog>

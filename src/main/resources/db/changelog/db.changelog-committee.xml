@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+
+    <changeSet id="1-committee-create-table" author="seyyed">
+        <createTable tableName="committee">
+            <column name="id" type="VARCHAR(36)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="committee_type_id" type="VARCHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="parent_committee_id" type="VARCHAR(36)"/>
+            <column name="system_owner_id" type="VARCHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="is_nicico_chart" type="BOOLEAN" defaultValueBoolean="true">
+                <constraints nullable="false"/>
+            </column>
+            <column name="committee_owner_id" type="VARCHAR(255)"/>
+            <column name="committee_owner_titel" type="VARCHAR(255)"/>
+            <column name="committee_location_id" type="VARCHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="committee_address" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="committee_time" type="VARCHAR(255)"/>
+            <column name="code" type="VARCHAR(255)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="VARCHAR(255)"/>
+            <column name="committee_level_id" type="VARCHAR(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="document_ids" type="VARCHAR(255)"/>
+            <column name="min_members_committee" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="is_extend_date" type="BOOLEAN" defaultValueBoolean="true">
+                <constraints nullable="false"/>
+            </column>
+            <column name="is_active" type="BOOLEAN" defaultValueBoolean="true">
+                <constraints nullable="false"/>
+            </column>
+
+            <!-- Auditable Fields -->
+            <column name="d_created_date" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column name="c_created_by" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="d_last_modified_date" type="TIMESTAMP"/>
+            <column name="c_last_modified_by" type="VARCHAR(255)"/>
+            <column name="n_version" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint
+                baseColumnNames="committee_type_id"
+                baseTableName="committee"
+                constraintName="fk_committee_committee_type"
+                referencedColumnNames="id"
+                referencedTableName="base_info"/>
+
+        <addForeignKeyConstraint
+                baseColumnNames="parent_committee_id"
+                baseTableName="committee"
+                constraintName="fk_committee_parent_committee"
+                referencedColumnNames="id"
+                referencedTableName="committee"/>
+
+        <addForeignKeyConstraint
+                baseColumnNames="system_owner_id"
+                baseTableName="committee"
+                constraintName="fk_committee_system_owner"
+                referencedColumnNames="id"
+                referencedTableName="base_info"/>
+
+        <addForeignKeyConstraint
+                baseColumnNames="committee_location_id"
+                baseTableName="committee"
+                constraintName="fk_committee_committee_location"
+                referencedColumnNames="id"
+                referencedTableName="base_info"/>
+
+        <addForeignKeyConstraint
+                baseColumnNames="committee_level_id"
+                baseTableName="committee"
+                constraintName="fk_committee_committee_level"
+                referencedColumnNames="id"
+                referencedTableName="base_info"/>
+    </changeSet>
+    <changeSet id="1781615566697-1" author="seyyed">
+        <addColumn tableName="committee">
+            <column name="subject_category_id" type="varchar(36)"></column>
+        </addColumn>
+        <addForeignKeyConstraint
+                baseColumnNames="subject_category_id"
+                baseTableName="committee"
+                constraintName="fk_committee_subject_category"
+                referencedColumnNames="id"
+                referencedTableName="base_info"/>
+    </changeSet>
+    <changeSet id="1781615566697-2" author="seyyed">
+        <addColumn tableName="committee">
+            <column name="IS_NICICO" type="BOOLEAN" defaultValueBoolean="true"></column>
+        </addColumn>
+
+    </changeSet>
+    <changeSet id="1781615566697-3" author="seyyed">
+        <addColumn tableName="committee">
+            <column name="category_id" type="varchar(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="business_domain_id" type="varchar(36)">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+        <addForeignKeyConstraint
+                baseColumnNames="category_id"
+                baseTableName="committee"
+                constraintName="fk_committee_category"
+                referencedColumnNames="id"
+                referencedTableName="base_info"/>
+        <addForeignKeyConstraint
+                baseColumnNames="business_domain_id"
+                baseTableName="committee"
+                constraintName="fk_committee_business_domain"
+                referencedColumnNames="id"
+                referencedTableName="base_info"/>
+    </changeSet>
+    <changeSet id="1781615566697-4" author="seyyed">
+        <dropColumn tableName="committee" columnName="is_nicico_chart"/>
+    </changeSet>
+
+    <changeSet id="1781615566697-5" author="seyyed">
+        <dropColumn tableName="committee" columnName="committee_type_id"/>
+    </changeSet>
+</databaseChangeLog>

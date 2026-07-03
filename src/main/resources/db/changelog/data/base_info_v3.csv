@@ -1,0 +1,77 @@
+﻿id,type,code,latin,persian,description,parent_id,is_active,is_default
+a7be017d-c7b1-4570-9f41-f4d166d7c254,ENUM_TYPE,ENUM_OWNER_SYSTEM,Owner System,سیستم مالک,Parent category for سیستم مالک,,true,false
+218ebfaa-4e87-4d24-9da9-29727a9fa73d,ENUM_TYPE,TMS,Transaction Commission Management,سامانه مدیریت کمیسیون معاملات,,d9e4548a-0ed3-4407-b634-d581347bd3a0,true,false
+628897a0-1afa-4ec4-a85f-8b9c7cb17441,ENUM_TYPE,CMS,Contract Management System,سامانه مدیریت قراردادها,,d9e4548a-0ed3-4407-b634-d581347bd3a0,true,false
+64d116ec-6b7c-4b36-8bfb-32b98ed3a83a,ENUM_TYPE,PMS,Project Management System,سامانه مدیریت پروژه,,d9e4548a-0ed3-4407-b634-d581347bd3a0,true,false
+958e2af9-37a1-4f6a-93ba-bd6d70229c89,ENUM_TYPE,SMS,Subsidiary Management System,سامانه مدیریت شرکت‌های تابعه,,d9e4548a-0ed3-4407-b634-d581347bd3a0,true,false
+75ccce87-da20-4134-bf4b-2f9122d1652b,ENUM_TYPE,AVM,Approved Vendor List Management,سامانه مدیریت سازندگان مجاز AVL,,d9e4548a-0ed3-4407-b634-d581347bd3a0,true,false
+ebdb846e-6ef8-444b-8ccb-8c06e75f7861,ENUM_TYPE,SHM,Stakeholder Management System,سامانه مدیریت شرکت‌های ذینفع,,d9e4548a-0ed3-4407-b634-d581347bd3a0,true,false
+daa3ec1c-3c52-46a4-810d-db96124e65a6,ENUM_TYPE,ENUM_PERIODICITY,Periodicity,دوره تناوب,Parent category for دوره تناوب,,true,false
+11a09dd7-33f7-45a3-b134-d186b2436a0d,ENUM_TYPE,DAL,Daily,روزانه,each day (with configurable N-day interval),1b05c2c9-4077-4b6b-a613-304fc9d8cc56,true,false
+6bba9430-75dd-4d1c-9e16-2430ace0d62e,ENUM_TYPE,WKY,Weekly,هفتگی,each week (with configurable N-week interval),1b05c2c9-4077-4b6b-a613-304fc9d8cc56,true,false
+35942c3b-8b5f-4af2-828d-8c60e89c4343,ENUM_TYPE,MTH,Monthly,ماهانه,each month (based on day number or week and day),1b05c2c9-4077-4b6b-a613-304fc9d8cc56,true,false
+6e4abd94-fcaf-4782-95ef-b5626f5501f5,ENUM_TYPE,ANN,Annual,سالانه,each year (specific day and month),1b05c2c9-4077-4b6b-a613-304fc9d8cc56,true,false
+82c1e394-3a6a-4783-8067-e2b23d9974bd,ENUM_TYPE,ENUM_WEEKDAY,Weekdays,روزهای هفته,Parent category for روزهای هفته,,true,false
+818d0488-28a7-49e8-a37d-9d95dc88a9ab,ENUM_TYPE,SAT,Saturday,شنبه,Saturday,d915f2f2-6236-4ad3-b05d-d73be60a550f,true,false
+36dd8f95-d547-4034-8340-e61277dbd2ce,ENUM_TYPE,SUN,Sunday,یکشنبه,Sunday,d915f2f2-6236-4ad3-b05d-d73be60a550f,true,false
+a8da61cf-d100-4704-b52e-dafea9730f29,ENUM_TYPE,MON,Monday,دوشنبه,Monday,d915f2f2-6236-4ad3-b05d-d73be60a550f,true,false
+e6851250-f646-47ee-9f83-362c452d8b91,ENUM_TYPE,TUE,Tuesday,سه‌شنبه,Tuesday,d915f2f2-6236-4ad3-b05d-d73be60a550f,true,false
+7056d798-830a-434c-a90e-81180e7d0c81,ENUM_TYPE,WED,Wednesday,چهارشنبه,Wednesday,d915f2f2-6236-4ad3-b05d-d73be60a550f,true,false
+5603c68b-59f9-4d54-8ac5-5f60f8f01726,ENUM_TYPE,THU,Thursday,پنج‌شنبه,Thursday,d915f2f2-6236-4ad3-b05d-d73be60a550f,true,false
+2550d72d-9bc2-4882-9c68-ceea2586f3af,ENUM_TYPE,FRI,Friday,جمعه,Friday,d915f2f2-6236-4ad3-b05d-d73be60a550f,true,false
+ea5459f4-d0f5-4eb6-b044-87ee4ebde89b,ENUM_TYPE,ENUM_DAY_OF_MONTH,Days of Month,روزهای ماه,Parent category for روزهای ماه,,true,false
+b66f8cd2-ad45-423e-aa22-b498c935bd93,ENUM_TYPE,D01,Day 1,1,Day 1 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+b4f32dd2-64c3-49b4-995b-e7ac5fd5939f,ENUM_TYPE,D02,Day 2,2,Day 2 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+994010a9-431d-4d20-810b-5f9cc9a5fad4,ENUM_TYPE,D03,Day 3,3,Day 3 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+e211f6e3-58a3-4c81-b7a2-b35ae71afb46,ENUM_TYPE,D04,Day 4,4,Day 4 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+39fbac36-b33a-43f4-92e3-15cafd2ca286,ENUM_TYPE,D05,Day 5,5,Day 5 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+d2e80ae7-f263-41e1-96fd-45316b79d5db,ENUM_TYPE,D06,Day 6,6,Day 6 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+e28a193f-b553-48f0-8458-05b0ccaf57dc,ENUM_TYPE,D07,Day 7,7,Day 7 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+e092353a-ffbd-467d-97bf-4aa98d0ab182,ENUM_TYPE,D08,Day 8,8,Day 8 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+b8da2cba-86b1-4507-86f8-d36ebb597337,ENUM_TYPE,D09,Day 9,9,Day 9 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+5dec6ba8-2c66-410d-98af-41287e812af2,ENUM_TYPE,D10,Day 10,10,Day 10 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+c226a10d-7576-466b-8011-64d1399dfb39,ENUM_TYPE,D11,Day 11,11,Day 11 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+bc44d7cb-82fc-428b-a7a1-5e19e5007df6,ENUM_TYPE,D12,Day 12,12,Day 12 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+b68667bf-3a66-4f3f-b2e3-9ddb9f1bfd84,ENUM_TYPE,D13,Day 13,13,Day 13 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+c9346205-0c1f-4dd9-95dc-31b79481a78f,ENUM_TYPE,D14,Day 14,14,Day 14 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+18bb750b-478a-4c14-ab39-9ca7bb5b8f83,ENUM_TYPE,D15,Day 15,15,Day 15 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+3a968449-5df5-41c8-b0b7-73bc66429c1e,ENUM_TYPE,D16,Day 16,16,Day 16 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+b0e26e6a-2291-4a86-a301-f0f9d8873a2e,ENUM_TYPE,D17,Day 17,17,Day 17 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+4c133816-6068-4b10-a2a6-a0e8f3f53e43,ENUM_TYPE,D18,Day 18,18,Day 18 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+ec3540b6-873d-4d04-ba93-d9ce563f3659,ENUM_TYPE,D19,Day 19,19,Day 19 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+7fb86d17-d2d0-4cdb-9f44-74db1bad9c96,ENUM_TYPE,D20,Day 20,20,Day 20 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+455c4892-a0f0-4de3-ae9f-bd2867279652,ENUM_TYPE,D21,Day 21,21,Day 21 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+35b6b521-6e7a-47f6-93fc-34a2d5184aa3,ENUM_TYPE,D22,Day 22,22,Day 22 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+aeb9cc6e-11e8-46ce-827f-a0b91fe8971a,ENUM_TYPE,D23,Day 23,23,Day 23 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+20f8173f-d404-4c42-a6ac-1b2d22e77fff,ENUM_TYPE,D24,Day 24,24,Day 24 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+82602cc7-a6a6-4225-93ac-0fe08163d8b9,ENUM_TYPE,D25,Day 25,25,Day 25 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+f5cd9e46-bf6b-4542-9f41-34f0addf2d71,ENUM_TYPE,D26,Day 26,26,Day 26 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+3a4794e0-b468-4387-942e-7fe6d27bcb5e,ENUM_TYPE,D27,Day 27,27,Day 27 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+5d071e0d-0651-4f6a-9483-f3544f008eb1,ENUM_TYPE,D28,Day 28,28,Day 28 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+a5151abc-f1ab-4c43-9411-a9e1fe9b9ac5,ENUM_TYPE,D29,Day 29,29,Day 29 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+b892a0e8-0f6e-47c2-b394-d3ce9ead2ac3,ENUM_TYPE,D30,Day 30,30,Day 30 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+6223373f-3e3c-44a3-9838-4efd561d3b69,ENUM_TYPE,D31,Day 31,31,Day 31 of month,59ee16ae-53af-471e-90eb-39d08287f7bb,true,false
+4aec0f7f-b455-4771-b51c-f2c36250fa5d,ENUM_TYPE,ENUM_MONTH,Months,ماه‌های سال,Parent category for ماه‌های سال,,true,false
+fb768718-9802-4dae-9286-85addc12baad,ENUM_TYPE,FRV,Farvardin,فروردین,Farvardin,6b248502-2905-4fa9-9e9a-4b37916b9598,true,false
+3759d0d9-4ddc-4bdc-a4fa-034ffc3eb068,ENUM_TYPE,ORD,Ordibehesht,اردیبهشت,Ordibehesht,6b248502-2905-4fa9-9e9a-4b37916b9598,true,false
+b264022d-0cdb-43a0-99ea-007fea8280b2,ENUM_TYPE,KHR,Khordad,خرداد,Khordad,6b248502-2905-4fa9-9e9a-4b37916b9598,true,false
+0bab04e5-5112-466b-acb1-9d8a39a566bf,ENUM_TYPE,TIR,Tir,تیر,Tir,6b248502-2905-4fa9-9e9a-4b37916b9598,true,false
+9fc627db-97da-4a53-9786-beba2b0bb160,ENUM_TYPE,MRD,Mordad,مرداد,Mordad,6b248502-2905-4fa9-9e9a-4b37916b9598,true,false
+c790ac8e-80c3-4dc9-97ea-35093343c915,ENUM_TYPE,SHR,Shahrivar,شهریور,Shahrivar,6b248502-2905-4fa9-9e9a-4b37916b9598,true,false
+77cadee2-79c3-4c66-b17e-3b14d7359819,ENUM_TYPE,MHR,Mehr,مهر,Mehr,6b248502-2905-4fa9-9e9a-4b37916b9598,true,false
+55d0068e-58eb-4d57-b0ee-e2dbfb957bb7,ENUM_TYPE,ABN,Aban,آبان,Aban,6b248502-2905-4fa9-9e9a-4b37916b9598,true,false
+db9c19da-d876-4d6a-9e1f-83706530e566,ENUM_TYPE,AZR,Azar,آذر,Azar,6b248502-2905-4fa9-9e9a-4b37916b9598,true,false
+db7d12e9-203c-445b-b091-38a9a7d2ac54,ENUM_TYPE,DEY,Dey,دی,Dey,6b248502-2905-4fa9-9e9a-4b37916b9598,true,false
+44277984-3a27-4544-83c6-2acefcae06c5,ENUM_TYPE,BAH,Bahman,بهمن,Bahman,6b248502-2905-4fa9-9e9a-4b37916b9598,true,false
+771c4758-2768-42c6-bfb8-b3fb344bb34a,ENUM_TYPE,ESF,Esfand,اسفند,Esfand,6b248502-2905-4fa9-9e9a-4b37916b9598,true,false
+99c95797-ac8e-4382-aae1-b84f6f093920,ENUM_TYPE,ENUM_WEEK_OF_MONTH,Week of Month,هفته‌های ماه,Parent category for هفته‌های ماه,,true,false
+acf50ab1-7d3e-4c15-bc12-7fa38e4f11ca,ENUM_TYPE,W01,First Week,هفته اول,First week of month,f152690c-91ef-40a6-bfa6-c181d732472e,true,false
+424f3c1b-b85e-49b1-8735-8f285f503985,ENUM_TYPE,W02,Second Week,هفته دوم,Second week of month,f152690c-91ef-40a6-bfa6-c181d732472e,true,false
+5ba386cc-ca9e-44d6-a8e5-a67515cff67c,ENUM_TYPE,W03,Third Week,هفته سوم,Third week of month,f152690c-91ef-40a6-bfa6-c181d732472e,true,false
+d8e74f33-922a-475d-8406-e3737bc7fa20,ENUM_TYPE,W04,Fourth Week,هفته چهارم,Fourth week of month,f152690c-91ef-40a6-bfa6-c181d732472e,true,false
+4761e5b9-5731-46ce-9eb7-cab8bc88f648,ENUM_TYPE,W05,Last Week,هفته آخر,Last week of month,f152690c-91ef-40a6-bfa6-c181d732472e,true,false
+b5bebb80-0cc1-45c9-a2b3-d0c446000467,ENUM_TYPE,ENUM_HOLIDAY_RULE,Holiday Rule,قانون برخورد با تعطیلات,Parent category for قانون برخورد با تعطیلات,,true,false
+5c148e22-fa00-4725-b993-cf20f147cd51,ENUM_TYPE,NXT,Next Working Day,انتقال به روز کاری بعد,Move meeting to next working day,49b13fbb-7da2-4d6e-a863-c792a67b7b1b,true,false
+ec791e97-7f82-4247-baa2-071e7cdb5254,ENUM_TYPE,PRV,Previous Working Day,انتقال به روز کاری قبل,Move meeting to previous working day,49b13fbb-7da2-4d6e-a863-c792a67b7b1b,true,false
+55581af8-5068-4716-9309-fe09b3cd6115,ENUM_TYPE,SKP,Skip,حذف جلسه,Skip meeting for this occurrence,49b13fbb-7da2-4d6e-a863-c792a67b7b1b,true,false
+36756ec4-7bc1-44cb-8742-07b9227395d0,ENUM_TYPE,EXP,Exception,استثناء,Meeting remains in place on holiday without rescheduling,49b13fbb-7da2-4d6e-a863-c792a67b7b1b,true,false

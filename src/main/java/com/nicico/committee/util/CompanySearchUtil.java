@@ -1,18 +1,16 @@
 package com.nicico.committee.util;
 
-import com.nicico.committee.entities.Company;
-import com.nicico.committee.service.dto.CompanySearchDTO;
 import com.nicico.copper.common.domain.criteria.NICICOSpecification;
 import com.nicico.copper.common.dto.search.SearchDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.EntityManager;
-import javax.persistence.Tuple;
-import javax.persistence.TupleElement;
-import javax.persistence.TypedQuery;
-import javax.persistence.criteria.*;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.Tuple;
+import jakarta.persistence.TupleElement;
+import jakarta.persistence.TypedQuery;
+import jakarta.persistence.criteria.*;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
