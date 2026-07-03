@@ -13,5 +13,7 @@
     <include file="/db/changelog/db.changelog-sessionattendance.xml"/>
     <include file="/db/changelog/db.changelog-committeeperiodicitysettings.xml"/>
     <include file="/db/changelog/db.changelog-baseinfo-data.xml"/>
+    <include file="/db/changelog/db.changelog-entitydocument.xml"/>
+    <include file="/db/changelog/db.changelog-baseinfo-add-json.xml"/>
 
 </databaseChangeLog>
