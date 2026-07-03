@@ -14,6 +14,6 @@
     <include file="/db/changelog/db.changelog-committeeperiodicitysettings.xml"/>
     <include file="/db/changelog/db.changelog-baseinfo-data.xml"/>
     <include file="/db/changelog/db.changelog-entitydocument.xml"/>
-    <include file="/db/changelog/db.changelog-baseinfo-add-json.xml"/>
+    <include file="/db/changelog/db.changelog-drop-document-columns.xml"/>
 
 </databaseChangeLog>

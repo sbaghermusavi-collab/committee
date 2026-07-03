@@ -57,12 +57,6 @@ public class BaseInfo extends Auditable implements Serializable {
     @Column(name = "description", nullable = false)
     private String description;
 
-    @Column(name = "validation_condition")
-    private String condition;
-
-    @Column(name = "json_data", columnDefinition = "text")
-    private String jsonData;
-
 //    @OneToOne(mappedBy = "baseInfo", cascade = CascadeType.ALL)
 //    @Setter(lombok.AccessLevel.NONE)
 //    BaseInfoMenu baseInfoMenu;

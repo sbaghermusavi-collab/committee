@@ -1,6 +1,7 @@
 package com.nicico.committee.entities;
 
 import com.nicico.copper.common.domain.Auditable;
+import com.nicico.committee.validation.ValidBaseInfo;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -29,6 +30,7 @@ public class Committee extends Auditable {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "category_id", insertable = false, updatable = false)
     @Schema(description = "ماهیت سازمانی (اطلاعات پایه) | Table: ماهیت سازمانی جلسه | ID: 1e6aa780-517c-42fe-b531-3044b14a0d48")
+    @ValidBaseInfo(parentCode = "ENUM_COMMITTY_TYPE")
     private BaseInfo category;
 
     // ----- BusinessDomain FK (BaseInfo) -----
@@ -132,9 +134,6 @@ public class Committee extends Auditable {
     private BaseInfo committeeLevel;
 
     // ----- Document IDs -----
-    @Column(name = "document_ids")
-    @Schema(description = "شناسه مستندات قانونی/آیین‌نامه")
-    private String documentIds;
 
     // ----- MinMembersCommittee -----
     @Column(name = "min_members_committee", nullable = false)

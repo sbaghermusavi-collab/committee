@@ -86,12 +86,4 @@ public class Meeting extends Auditable {
     @JoinColumn(name = "status_id", insertable = false, updatable = false)
     @Schema(description = "وضعیت جلسه | Table: وضعیت جلسه | ID: 536569d2-ca23-49ef-a88f-ba5523a99109")
     private BaseInfo status;
-
-    @Column(name = "document_ids")
-    @Schema(description = "مستندات جلسه | Table: روش اخذ تصمیم | ID: 503a3f60-0352-48aa-822c-1b0f5a1c95eb")
-    private String documentIds;
-
-    @Column(name = "document_link_ids")
-    @Schema(description = "شناسه مستندات مرتبط - چند انتخابی")
-    private String documentLinkIds;
 }

@@ -92,7 +92,4 @@ public class CommitteeMemberAssignment extends Auditable {
     private Boolean isActive = true;
 
     // ----- DocumentIDs (appointment documents) -----
-    @Column(name = "document_ids")
-    @Schema(description = "شناسه/شناسه‌های مدارک انتصاب")
-    private String documentIds;
 }

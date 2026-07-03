@@ -127,12 +127,4 @@ public class MeetingAttendance extends Auditable {
     @Column(name = "signed_attendance_document_id")
     @Schema(description = "سند امضاء لیست حضور - تک انتخابی")
     private String signedAttendanceDocumentId;
-
-    @Column(name = "document_ids")
-    @Schema(description = "مستند رسمی انتصاب | Table: روش اخذ تصمیم | ID: 503a3f60-0352-48aa-822c-1b0f5a1c95eb")
-    private String documentIds;
-
-    @Column(name = "document_link_ids")
-    @Schema(description = "اسناد مرتبط - چند انتخابی")
-    private String documentLinkIds;
 }
