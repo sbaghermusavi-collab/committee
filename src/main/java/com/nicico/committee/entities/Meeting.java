@@ -5,6 +5,8 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 import jakarta.persistence.*;
+import java.util.List;
+import org.hibernate.annotations.Where;
 import java.time.LocalDate;
 
 @Entity
@@ -87,11 +89,8 @@ public class Meeting extends Auditable {
     @Schema(description = "وضعیت جلسه | Table: وضعیت جلسه | ID: 536569d2-ca23-49ef-a88f-ba5523a99109")
     private BaseInfo status;
 
-    @Column(name = "document_ids")
-    @Schema(description = "مستندات جلسه | Table: روش اخذ تصمیم | ID: 503a3f60-0352-48aa-822c-1b0f5a1c95eb")
-    private String documentIds;
-
-    @Column(name = "document_link_ids")
-    @Schema(description = "شناسه مستندات مرتبط - چند انتخابی")
-    private String documentLinkIds;
+    @OneToMany(fetch = FetchType.LAZY)
+    @JoinColumn(name = "entity_id", referencedColumnName = "id", insertable = false, updatable = false)
+    @Where(clause = "entity_name = 'Meeting'")
+    private List<EntityDocument> documents;
 }

@@ -8,6 +8,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 import jakarta.persistence.*;
+import java.util.List;
+import org.hibernate.annotations.Where;
 
 @Entity
 @Table(name = "committee")
@@ -132,9 +134,6 @@ public class Committee extends Auditable {
     private BaseInfo committeeLevel;
 
     // ----- Document IDs -----
-    @Column(name = "document_ids")
-    @Schema(description = "شناسه مستندات قانونی/آیین‌نامه")
-    private String documentIds;
 
     // ----- MinMembersCommittee -----
     @Column(name = "min_members_committee", nullable = false)
@@ -150,4 +149,9 @@ public class Committee extends Auditable {
     @Column(name = "is_active", nullable = false)
     @Schema(description = "فعال/غیرفعال")
     private Boolean isActive = true;
+
+    @OneToMany(fetch = FetchType.LAZY)
+    @JoinColumn(name = "entity_id", referencedColumnName = "id", insertable = false, updatable = false)
+    @Where(clause = "entity_name = 'Committee'")
+    private List<EntityDocument> documents;
 }

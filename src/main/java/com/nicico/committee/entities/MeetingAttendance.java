@@ -5,6 +5,8 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 import jakarta.persistence.*;
+import java.util.List;
+import org.hibernate.annotations.Where;
 
 @Entity
 @Table(name = "meeting_attendance")
@@ -128,11 +130,8 @@ public class MeetingAttendance extends Auditable {
     @Schema(description = "سند امضاء لیست حضور - تک انتخابی")
     private String signedAttendanceDocumentId;
 
-    @Column(name = "document_ids")
-    @Schema(description = "مستند رسمی انتصاب | Table: روش اخذ تصمیم | ID: 503a3f60-0352-48aa-822c-1b0f5a1c95eb")
-    private String documentIds;
-
-    @Column(name = "document_link_ids")
-    @Schema(description = "اسناد مرتبط - چند انتخابی")
-    private String documentLinkIds;
+    @OneToMany(fetch = FetchType.LAZY)
+    @JoinColumn(name = "entity_id", referencedColumnName = "id", insertable = false, updatable = false)
+    @Where(clause = "entity_name = 'MeetingAttendance'")
+    private List<EntityDocument> documents;
 }
